@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/style.css">  
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=League+Spartan&family=Nunito&family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Perichon</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <nav class="header__nav">            
+            <div class="header__div" id="Perichon">
+                <img class="header__div img" src="../img/Logo Perichon - copia.jpg" alt="">
+            </div>
+            <input type="checkbox" id="toggler">
+            <label for="toggler">
+                <i class="ri-menu-line"><img src="../img/icono hamburguesa.png" alt=""></i>
+            </label>
+            <div class="menu">            
+                <ul class="header__ul">
+                    <li class="header__ul li">
+                        <a class="active" href="../index.html">Home</a>
+                    </li>
+                    <li class="header__ul li">
+                        <a href="../pages/products.html">Productos</a>
+                    </li>
+                    <li class="header__ul li">
+                        <a href="../pages/aboutus.html">Quienes somos</a>
+                    </li>
+                    <li class="header__ul li">
+                        <a href="../pages/findus.html"> Donde encontrarnos</a>
+                    </li>
+                    <li class="header__ul li">
+                        <a href="../pages/contact.html">Contacto</a>
+                    </li>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--CONTACT FORM-->
+    <section class="contact">
+        <h3 class="section__title">
+            Contactanos 
+        </h3>
+        <div class="contact__grid">
+            <form class="contact__form">
+                <ul class="form__grid">
+                    <li id="name" class="form--item">
+                        <div>
+                            <label class="form--label">Nombre</label>
+                        </div>
+                        <div>
+                            <input type="text" class="form--text" required>
+                        </div>
+                    </li>
+
+                    <li id="lastName" class="form--item">
+                        <div>
+                            <label class="form--label">Apellido</label>
+                        </div>
+                        <div>  
+                            <input type="text" class="form--text" required>
+                        </div>
+                    </li>
+
+                    <li id="email" class="form--item">
+                        <div>
+                            <label class="form--label">Correo electrónico</label>
+                        </div>
+                        <div>
+                            <input type="text" class="form--text" required>
+                        </div>
+                    </li>
+
+                    <li id="subject" class="form--item">
+                        <div>
+                            <label class="form--label">Asunto</label>
+                        </div>
+                        <div>
+                            <input type="text" class="form--text" required>
+                        </div>
+                    </li>
+
+                    <li id="message" class="form--item">
+                        <div>
+                            <label class="form--label">Deja tu mensaje</label>
+                        </div>
+                        <div>
+                            <textarea class="form--text" required></textarea>
+                        </div>
+                    </li>
+
+                    <li id="sendButton" class="form--item">
+                        <button class="button">
+                            <input type="submit" value="Enviar" class="btn--input">
+                        </button>
+                    </li>
+               </ul>
+            </form>
+
+            <div>
+                <img src="../img/Contact img/perro.jpg" class="form__img" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <ul class="footer__ul">
+            <li id="footer__logoPerichon" class="footer--logo">
+                <img class="logoFooter" src="../img/Logo Perichon - copia.jpg" alt="">
+            </li>
+            <li class="footer__contactos">
+                <ul class="footer__ul--items">
+                    <li id="footer__facebook" class="socialMedia--icon">
+                        <a class="footer__ul a" href="https://www.facebook.com/traposperichon">
+                        <img class="a__img" src="../img/Logos Social Media/facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li id="footer__instagram"class="socialMedia--icon">
+                        <a class="footer__ul a" href="https://www.instagram.com/trapos_perichon/">
+                        <img class="a__img" src="../img/Logos Social Media/instagram.png" alt="">
+                        </a>
+                    </li>
+                    <li id="footer__whatsapp" class="socialMedia--icon">
+                        <a class="footer__ul a" href="https://wa.me/543794809317
+                        ">
+                            <img class="a__img" src="../img/Logos Social Media/whatsapp.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- boton para regresar al inicio de pagina-->
+        <a href="#Perichon">
+            <img class="goUp" src="../img/Arriba.png" alt="">
+        </a>
+    </footer> 
+</body>
+</html>
