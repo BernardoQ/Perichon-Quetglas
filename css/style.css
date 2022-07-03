@@ -452,6 +452,12 @@ a{
       width: 100vw;
   }
 
+  .sliderImg{
+    height: auto;
+    width: 60vw;
+    margin: auto;
+  } 
+
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
   }
