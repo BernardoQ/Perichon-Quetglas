@@ -454,6 +454,13 @@ a{
   font: 1.5rem;
   font-weight: bold;
   text-shadow: none;
+  transition: transform 0.3s;
+}
+
+.button:hover {
+  color: #DEC513;
+  text-decoration: none;
+  transform: scale(1.1);
 }
 
 .form__img{
