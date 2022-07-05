@@ -14,30 +14,7 @@ ul{
 }
 
 a{
-  text-decoration: none;
-}
-
-@keyframes scale{
-  100% {
-    transform: scale(1);
-  }
-}
-
-span.fade-in{
-  display: inline-block;
-  opacity: 0;
-  filter: blur(4px);
-}
-
-span.fade-in{
-  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
+  text-decoration: none !important;
 }
 
 .section__title{
@@ -50,86 +27,43 @@ span.fade-in{
 }
 
 /*NAV BAR STYLE*/
-/* .header__nav{
-  background-image: url(/img/cotton-red-texture-background-2045782.jpg);
-} */
-
-.header__div img{
-  height: 12rem;
-  width: fit-content;
-  border-radius: 25px;
-  margin-left: 1rem;
-  margin-right: 5rem;
-}
-
-.header__ul li a{
-  color: black;
-  font-style: bold;
-  color: #292929;
-  font-size: 1.5rem;
-  font-weight: 1000;
-  transition: 1s;
-}
-
-.header__nav{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+.header{
   background-color: #E33532;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
 }
 
-.header__ul{
+.header__content{
   display: flex;
-  gap: 2.5rem;
-  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#toggler, 
-.header__nav label{
-  display: none;
+.content__navbar{
+  display: flex;
+  align-items: center;
 }
 
-.header__ul li{
-  /* width: 3rem;
-  height: 3rem; */
-  transition: transform 0.3s
+.content__navbar li{
+  margin: 0 1rem;
+  transition: transform 0.3s;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.header__ul li:hover{
-  transform: scale(1.3);    
+.content__navbar li a{
+  color: #292929;
+  transition: transform 0.3s;
+}
+
+.content__navbar li a:hover{
+  transform: scale(1.5);    
   transition: ease-out 0.3s;
+  color: #DEC513;
 }
-
 
 /*FOOTER STYLE*/
 .footer{
-  bottom: 0;
-  width: 100%;
-  height: fit-content;
-}
-
-.footer__ul{
   background-color: #E33532;
-  display: grid;
-  grid-template-columns: 5fr repeat(1, 4fr);
-  column-gap: 0.2rem;
-  /* background-image: url(/img/cotton-red-texture-background-2045782.jpg); */
-}
-
-.footer__contactos{
-  align-self: center;
-}
-
-.footer__ul--items{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.logoFooter{
-  width: 25rem;
-  height: auto;
 }
 
 .a__img{
@@ -143,32 +77,15 @@ span.fade-in{
   transition: ease-out 0.3s;
 }
 
-
-
-.goUp{
-  float: right;
-  margin: 10px 3rem 10px 10px;
-  width: 2.5rem;
-  height: 2.5rem;
+.logoFooter{
+  width: 25rem;
+  height: auto;
 }
 
 /*INDEX-SLIDER SECTION STYLE*/ 
-.slider{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #E1E0E7;
-  margin-bottom: 10rem;
-}
-
-.sliderImg{
-  height: 80vh;
-  width: auto;
-  margin: auto;
-} 
 
 
-/* INDEX-HIGHLIGHTS SECTION STYLE*/
+/*INDEX-HIGHLIGHTS SECTION STYLE*/
 .sectionInfo{
   margin-bottom: 10rem;
 }
@@ -184,6 +101,10 @@ span.fade-in{
   width: 80rem;
   justify-items: center;
   border-radius: 10px;
+}
+
+.card-text{
+  font-size: 2rem;
 }
 
 
@@ -253,8 +174,8 @@ span.fade-in{
 
 
 /*PRODUCTS PAGE STYLE*/
-.products__section{
-  margin: 4rem auto 15rem auto;
+.section__products{
+  margin: 8rem 2rem 10rem 2rem;
 }
 
 .products__caract li{
@@ -262,37 +183,11 @@ span.fade-in{
   margin-left: 2rem;
 }
 
-.section__products{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  justify-content: space-around;
-}
-
-.products__li{
-  width: 90%;
-  border-radius: 15px;
-  margin: 2rem auto 2rem auto;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
 .products__img{
-  width:85%;
-  height:auto;
+  width:40rem;
+  height:30rem;
   border-radius: 15px;
-  margin-top: 1.5rem;
-  margin: 2rem 7.5% 0 7.5%
-}
-
-.products__description{
-  display: block;
-  justify-content: center;
-  margin: 2rem 0.5rem 0.5rem 2rem;
-  padding: 1rem;
-  line-height: 1.5em;
-  font-size: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
-  /*color: white;*/
+  margin: 1rem auto;
 }
 
 /*FINDUS PAGE STYLE*/
@@ -471,15 +366,7 @@ span.fade-in{
 
 /*MEDIA QUERIES*/
 @media (max-width: 1200px){
-  .sliderImg{
-      width: 100vw;
-  }
 
-  .sliderImg{
-    height: auto;
-    width: 60vw;
-    margin: auto;
-  } 
 
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
@@ -491,27 +378,7 @@ span.fade-in{
   }
 
   /*PRODUCTOS PAGE MEDIA*/
-  .section__products{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
 
-  .products__li{
-      width: 80%;
-      height: auto;
-      margin: 2rem auto 2rem auto;
-  }
-
-  .products__img{
-      display: flex;
-      justify-self: center;
-      margin: 2rem auto;
-      height: auto;
-  }
-
-  .products__description{
-      padding: 2rem ;
-  }
 
   /*FIND US PAGE MEDIA*/
   .findUs__grid{
@@ -537,23 +404,7 @@ span.fade-in{
 
 @media (max-width: 992px){
   /*FOOTER*/
-  .footer__ul{
-      width:100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.5fr;
-      text-align: center;
-  }
 
-  .footer__ul--items{
-      display: flex;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-  }
-
-  .sliderImg{
-      width: 100vw;
-  }
 
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
@@ -564,10 +415,6 @@ span.fade-in{
       height: 25rem;    
   }
 
-  .highlightsSection__ul{
-      display: grid;
-      grid-template-columns: 1fr;
-  }
 
   /*FIND US PAGE MEDIA*/
   .findUs__grid{
@@ -618,24 +465,10 @@ span.fade-in{
 
 @media (max-width: 768px){ 
   /*FOOTER*/
-  .footer__ul{
-      width:100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.5fr;
-      text-align: center;
-  }
 
-  .footer__ul--items{
-      display: flex;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-  }
 
   /*HIGHLIGHTS PAGE MEDIA*/
-  .sliderImg{
-      width: 100vw;
-  }
+
 
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
@@ -647,10 +480,7 @@ span.fade-in{
   }
 
   /*PRODUCT PAGE MEDIA*/
-  .section__products{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-  }
+ 
 
   /*ABOUT US PAGE MEDIA*/
   .aboutUs__grid{
@@ -701,65 +531,10 @@ span.fade-in{
 
 @media (max-width: 576px){
   /*HEADER*/
-  .header__div img{
-      width: 80vw;
-      height: auto;
-  }
-
-  .menu{
-    width: 93%;
-    height:fit-content;
-    max-height: 0;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .ri-menu-line img{
-      width: 3rem;
-      height: auto;
-  }
-
-  .header__ul{
-      flex-direction: column;
-      align-items: center;
-      background-color:#E33532;
-      /* padding: 1rem; */
-      width: 100%;
-  }
-
-  .header__nav label{
-      display: inline-flex;
-      align-items: center;
-      cursor: pointer;
-  }
-
-  #toggler:checked ~ .menu{
-      max-height: 100%;
-      overflow: visible;
-  }
-
-  .header__ul li a{
-      font-size: 2rem;
-  }
+ 
 
   /*FOOTER*/
-  .footer__ul{
-      width:100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.5fr;
-      text-align: center;
-  }
-
-  .footer__ul--items{
-      display: flex;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-  }
-
-  .goUp{
-      display: none;
-  }
+ 
 
   /*GALMA SECTION*/
   .sectionGalma__products{
@@ -772,20 +547,7 @@ span.fade-in{
   }
 
   /*PRODUCTS PAGE MEDIA*/
-  .section__products{
-      display: grid;
-      grid-template-columns: 1fr;
-  }
-
-  .products__li{
-      width: 90%;
-      height: auto;
-      /*background-color: #E33532;*/
-  }
-
-  .products__description{
-      font-size: 1.5rem;
-  }
+ 
 
   /*FIND US PAGE MEDIA*/
   .findUs__grid{
@@ -844,23 +606,9 @@ span.fade-in{
       height: auto;
   }
 
-  .logoFooter{
-      width: 60vw;
-      height: auto;
-  }
-
   .sectionGalma__products img{
       width: 70vw;
       height: auto;    
-  }
-
-  .header__div{
-      width: 100%;
-  }
-
-  .header__div img{
-      width: 80vw;
-      height: auto;
   }
 }
 
@@ -874,22 +622,8 @@ span.fade-in{
       height: auto;
   }
 
-  .logoFooter{
-      width: 60vw;
-      height: auto;
-  }
-
   .sectionGalma__products img{
       width: 70vw;
       height: auto;    
-  }
-
-  .header__div{
-      width: 100%;
-  }
-
-  .header__div img{
-      width: 80vw;
-      height: auto;
   }
 }

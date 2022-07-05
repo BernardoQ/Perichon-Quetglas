@@ -3,348 +3,382 @@
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- MY CSS -->
     <link rel="stylesheet" href="../css/style.css">  
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=League+Spartan&family=Nunito&family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
     <title>Perichon</title>
 </head>
 <body>
     <!--HEADER-->
-   <span class="fade-in">
     <header class="header">
-        <nav class="header__nav">            
-            <div class="header__div" id="Perichon">
-                <img class="header__div img" src="../img/Logo Perichon - copia.jpg" alt="">
-            </div>
-            <input type="checkbox" id="toggler">
-            <label for="toggler">
-                <i class="ri-menu-line"><img src="../img/icono hamburguesa.png" alt=""></i>
-            </label>
-            <div class="menu">            
-                <ul class="header__ul">
-                    <li class="header__ul li">
-                        <a class="active" href="../index.html">Home</a>
-                    </li>
-                    <li class="header__ul li">
-                        <a href="../pages/products.html">Productos</a>
-                    </li>
-                    <li class="header__ul li">
-                        <a href="../pages/aboutus.html">Quienes somos</a>
-                    </li>
-                    <li class="header__ul li">
-                        <a href="../pages/findus.html"> Donde encontrarnos</a>
-                    </li>
-                    <li class="header__ul li">
-                        <a href="../pages/contact.html">Contacto</a>
-                    </li>  
+        <div class="header__content container">
+            <h3>
+                <a href="../index.html" class="content__title">
+                    <img class="logoFooter" src="../img/Logo Perichon - copia.jpg" alt="">
+                </a>
+            </h3>
+            <nav>
+                <ul class="content__navbar">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/products.html">Productos</a></li>
+                    <li><a href="../pages/findus.html">Donde Encontrarnos</a></li>
+                    <li><a href="../pages/aboutus.html">Sobre Nosotros</a></li>
+                    <li><a href="../pages/contact.html">Contacto</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     
     <!--SECTION PRODUCTS-->
-    <section class="products__section">
+    <section class="section__products">    
         <h3 class="section__title">
             Nuestros Productos
         </h3>
-        <ul class="section__products">            
-            <li class="products__li">
-                <img src="../img/Productos/1.Trapo Gris M.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Trapo De Piso Blanco M</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 55 x 50cm. (tamaño Estandar)
-                    </li>
-                    <li>
-                        <b>Color:</b> Blanco
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>100% Puro Algodon</li>
-                            <li>Maxima Absorcion</li>
-                            <li>Doble refuerzo central, mayor durabilidad</li>
+
+        <div class="row row-cols-3 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/1.Trapo Gris M.png" class=" products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text">
+                            <li>
+                                <H3><b>Trapo De Piso Gris M</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 55 x 50cm. (tamaño Estandar)
+                            </li>
+                            <li>
+                                <b>Color:</b> Gris
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>100% Puro Algodon</li>
+                                    <li>Maxima Absorcion</li>
+                                    <li>Doble refuerzo central, mayor durabilidad</li>
+                                </ul>
+                            </li>                
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>
-            <li class="products__li">
-                <img src="../img/Productos/2.Trapo Blanco M.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Trapo De Piso Blanco M</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 55 x 50cm. (tamaño Estandar)
-                    </li>
-                    <li>
-                        <b>Color:</b> Blanco
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>100% Puro Algodon</li>
-                            <li>Maxima Absorcion</li>
-                            <li>Doble refuerzo central, mayor durabilidad</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/2.Trapo Blanco M.png" class="products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text">
+                            <li>
+                                <H3><b>Trapo De Piso Blanco M</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 55 x 50cm. (tamaño Estandar)
+                            </li>
+                            <li>
+                                <b>Color:</b> Blanco
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>100% Puro Algodon</li>
+                                    <li>Maxima Absorcion</li>
+                                    <li>Doble refuerzo central, mayor durabilidad</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>
-            <li class="products__li">
-                <img src="../img/Productos/3.Trapo Gris G.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Trapo De Piso Gris G</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 55 x 65cm. (tamaño Consorcio)
-                    </li>
-                    <li>
-                        <b>Color:</b> Gris
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>100% Puro Algodon</li>
-                            <li>Maxima Absorcion</li>
-                            <li>Doble refuerzo central, mayor durabilidad</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/3.Trapo Gris G.png" class="products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text">
+                            <li>
+                                <H3><b>Trapo De Piso Gris G</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 55 x 65cm. (tamaño Consorcio)
+                            </li>
+                            <li>
+                                <b>Color:</b> Gris
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>100% Puro Algodon</li>
+                                    <li>Maxima Absorcion</li>
+                                    <li>Doble refuerzo central, mayor durabilidad</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>
-            <li class="products__li">
-                <img src="../img/Productos/4.Trapo Blanco G.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Trapo De Piso Blanco G</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 55 x 65cm. (tamaño Consorcio)
-                    </li>
-                    <li>
-                        <b>Color:</b> Blanco
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>100% Puro Algodon</li>
-                            <li>Maxima Absorcion</li>
-                            <li>Doble refuerzo central, mayor durabilidad</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/4.Trapo Blanco G.png" class="products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text">
+                            <li>
+                                <H3><b>Trapo De Piso Blanco G</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 55 x 65cm. (tamaño Consorcio)
+                            </li>
+                            <li>
+                                <b>Color:</b> Blanco
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>100% Puro Algodon</li>
+                                    <li>Maxima Absorcion</li>
+                                    <li>Doble refuerzo central, mayor durabilidad</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>
-            <li class="products__li">
-                <img src="../img/Productos/5.Franela.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Franela</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 37 x 48cm.
-                    </li>
-                    <li>
-                        <b>Color:</b> Naranja
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>Calidad de excelencia</li>
-                            <li>Resistente</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/5.Franela.png" class="products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text"">
+                            <li>
+                                <H3><b>Franela</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 37 x 48cm.
+                            </li>
+                            <li>
+                                <b>Color:</b> Naranja
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>Calidad de excelencia</li>
+                                    <li>Resistente</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>
-            <li class="products__li">
-                <img src="../img/Productos/6.Rejilla Tejida.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Rejilla Tejida</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 45 x 45cm.
-                    </li>
-                    <li>
-                        <b>Color:</b> Blanco
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>100% Puro Algodon</li>
-                            <li>Maxima Absorcion</li>
-                            <li>Apto lavandina</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/6.Rejilla Tejida.png" class="products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text">
+                            <li>
+                                <H3><b>Rejilla Tejida</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 45 x 45cm.
+                            </li>
+                            <li>
+                                <b>Color:</b> Blanco
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>100% Puro Algodon</li>
+                                    <li>Maxima Absorcion</li>
+                                    <li>Apto lavandina</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>
-            <li class="products__li">
-                <img src="../img/Productos/7.Rejilla Doble.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Rejilla Doble</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 34 x 37cm.
-                    </li>
-                    <li>
-                        <b>Color:</b> Blanco
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>100% Puro Algodon</li>
-                            <li>Resistente</li>
-                            <li>Maxima Absorcion</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/7.Rejilla Doble.png" class="products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text">
+                            <li>
+                                <H3><b>Rejilla Doble</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 34 x 37cm.
+                            </li>
+                            <li>
+                                <b>Color:</b> Blanco
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>100% Puro Algodon</li>
+                                    <li>Resistente</li>
+                                    <li>Maxima Absorcion</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>
-            <li class="products__li">
-                <img src="../img/Productos/8.Rejilla Lavacoche.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Rejilla Doble Lavacoche</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 42 x 50cm.
-                    </li>
-                    <li>
-                        <b>Color:</b> Blanco
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>100% Puro Algodon</li>
-                            <li>Resistente</li>
-                            <li>Maxima Absorcion</li>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/8.Rejilla Lavacoche.png" class="products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text"">
+                            <li>
+                                <H3><b>Rejilla Doble Lavacoche</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 42 x 50cm.
+                            </li>
+                            <li>
+                                <b>Color:</b> Blanco
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>100% Puro Algodon</li>
+                                    <li>Resistente</li>
+                                    <li>Maxima Absorcion</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>
-            <li class="products__li">
-                <img src="../img/Productos/9.Paño multiuso x1.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Paño Multiuso x1un</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 38 x 40cm.
-                    </li>
-                    <li>
-                        <b>Color:</b> Amarillo
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>No retiene olores</li>
-                            <li>No deja pelusa</li>
-                            <li>Resistente a la lavandina</li>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/9.Paño multiuso x1.png" class="products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text"">
+                            <li>
+                                <H3><b>Paño Multiuso x1un</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 38 x 40cm.
+                            </li>
+                            <li>
+                                <b>Color:</b> Amarillo
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>No retiene olores</li>
+                                    <li>No deja pelusa</li>
+                                    <li>Resistente a la lavandina</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>
-            <li class="products__li">
-                <img src="../img/Productos/10.Paño multiuso x3.png" class="products__img" alt="">
-                <ul class="products__description">
-                    <li>
-                        <H3><b>Paño Multiuso x3un</b></H3>
-                    </li>
-                    <li>
-                        <b>Medidas:</b> 38 x 40cm.
-                    </li>
-                    <li>
-                        <b>Color:</b> Amarillo
-                    </li>
-                    <li>
-                        <b>Presentacion:</b> Fardo de 120 unidades
-                    </li>
-                    <li>
-                        <b>Caracteristicas:</b>
-                        <ul class="products__caract">
-                            <li>No retiene olores</li>
-                            <li>No deja pelusa</li>
-                            <li>Resistente a la lavandina</li>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card">
+                    <img src="../img/Productos/10.Paño multiuso x3.png" class="products__img card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="card-text"">
+                            <li>
+                                <H3><b>Paño Multiuso x3un</b></H3>
+                            </li>
+                            <li>
+                                <b>Medidas:</b> 38 x 40cm.
+                            </li>
+                            <li>
+                                <b>Color:</b> Amarillo
+                            </li>
+                            <li>
+                                <b>Presentacion:</b> Fardo de 120 unidades
+                            </li>
+                            <li>
+                                <b>Caracteristicas:</b>
+                                <ul class="products__caract">
+                                    <li>No retiene olores</li>
+                                    <li>No deja pelusa</li>
+                                    <li>Resistente a la lavandina</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                <!--<li>Precio unitario: $xxx</li> -->
-                </ul>
-            </li>            
-        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!--FOOTER-->
-    <footer class="footer">
-        <ul class="footer__ul">
-            <li id="footer__logoPerichon" class="footer--logo">
-                <img class="logoFooter" src="../img/Logo Perichon - copia.jpg" alt="">
-            </li>
-            <li class="footer__contactos">
-                <ul class="footer__ul--items">
-                    <li id="footer__facebook" class="socialMedia--icon">
-                        <a class="footer__ul a" href="https://www.facebook.com/traposperichon">
-                        <img class="a__img" src="../img/Logos Social Media/facebook.png" alt="">
-                        </a>
-                    </li>
-                    <li id="footer__instagram"class="socialMedia--icon">
-                        <a class="footer__ul a" href="https://www.instagram.com/trapos_perichon/">
+  <!--FOOTER-->
+  <div class="container">
+        <footer class="footer d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img class="logoFooter" src="../img/Logo Perichon - copia.jpg" alt="">
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-3 justify-content-evenly list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="footer__ul a" href="https://wa.me/543794809317
+                    ">
+                        <img class="a__img" src="../img/Logos Social Media/whatsapp.png" alt="">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="footer__ul a" href="https://www.instagram.com/trapos_perichon/">
                         <img class="a__img" src="../img/Logos Social Media/instagram.png" alt="">
-                        </a>
-                    </li>
-                    <li id="footer__whatsapp" class="socialMedia--icon">
-                        <a class="footer__ul a" href="https://wa.me/543794809317
-                        ">
-                            <img class="a__img" src="../img/Logos Social Media/whatsapp.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <!-- boton para regresar al inicio de pagina-->
-        <a href="#Perichon">
-            <img class="goUp" src="../img/Arriba.png" alt="">
-        </a>
-    </footer> 
-  </span>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="footer__ul a" href="https://www.facebook.com/traposperichon">
+                        <img class="a__img" src="../img/Logos Social Media/facebook.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <!--BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
