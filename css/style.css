@@ -389,8 +389,7 @@ a{
 }
 
 /*MEDIA QUERIES*/
-@media (max-width: 1200px){
-
+@media (max-width: 1260px){
 
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
@@ -492,11 +491,6 @@ a{
 
 
   /*HIGHLIGHTS PAGE MEDIA*/
-
-
-  .sectionGalma__products{
-      grid-template-columns: repeat(2,1fr);
-  }
 
   .sectionGalma__products img{
       width: 25rem;        
