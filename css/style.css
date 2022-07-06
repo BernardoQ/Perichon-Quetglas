@@ -29,25 +29,35 @@ a{
 /*NAV BAR STYLE*/
 .header{
   background-color: #E33532;
-  padding: 2rem 1rem;
+}
+
+.header img{
+  height: 6rem;
+  width: auto;
 }
 
 .header__content{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .content__navbar{
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 
 .content__navbar li{
-  margin: 0 1rem;
+  margin: 0 2.5rem;
   transition: transform 0.3s;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.content__navbar li:hover{
+  transform: scale(1.2);    
+  transition: ease-out 0.2s;
 }
 
 .content__navbar li a{
@@ -56,20 +66,30 @@ a{
 }
 
 .content__navbar li a:hover{
-  transform: scale(1.5);    
-  transition: ease-out 0.3s;
+  transform: scale(5.2);    
+  transition: ease-out 0.2s;
   color: #DEC513;
 }
 
 /*FOOTER STYLE*/
+.container footer{
+  width: 100%;
+}
+
 .footer{
   background-color: #E33532;
+}
+
+.footer_copyright{
+  font-size: 1rem;
+  font-weight: bolder;
+  align-self: end;
 }
 
 .a__img{
   width: 3rem;
   height: 3rem;
-  transition: transform 0.3s
+  transition: transform 0.3s;
 }
 
 .a__img:hover{
@@ -86,27 +106,25 @@ a{
 
 
 /*INDEX-HIGHLIGHTS SECTION STYLE*/
-.sectionInfo{
-  margin-bottom: 10rem;
+.products__section{  
+  margin: 15rem 0;
+  display: grid;
+  justify-items: center;
+  row-gap: 5rem;
+}
+
+.card.mb-3{
+  max-width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .info__container{
   backdrop-filter: blur(15px);    
 }
 
-.info__img{
-  display: flex;
-  margin: auto;
-  height: 60rem;
-  width: 80rem;
-  justify-items: center;
-  border-radius: 10px;
-}
-
 .card-text{
   font-size: 2rem;
 }
-
 
 /*INDEX - GALMA DECO STYLE*/
 .sectionGalma{
@@ -172,7 +190,6 @@ a{
   transform: scale(1.1);
 }
 
-
 /*PRODUCTS PAGE STYLE*/
 .section__products{
   margin: 8rem 2rem 10rem 2rem;
@@ -183,11 +200,17 @@ a{
   margin-left: 2rem;
 }
 
+.section__products .card{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 15px;
+  height: 60rem;
+}
+
 .products__img{
-  width:40rem;
+  width:38rem;
   height:30rem;
   border-radius: 15px;
-  margin: 1rem auto;
+  margin: 1rem auto; 
 }
 
 /*FINDUS PAGE STYLE*/
@@ -365,8 +388,7 @@ a{
 }
 
 /*MEDIA QUERIES*/
-@media (max-width: 1200px){
-
+@media (max-width: 1260px){
 
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
@@ -468,11 +490,6 @@ a{
 
 
   /*HIGHLIGHTS PAGE MEDIA*/
-
-
-  .sectionGalma__products{
-      grid-template-columns: repeat(2,1fr);
-  }
 
   .sectionGalma__products img{
       width: 25rem;        
@@ -627,3 +644,6 @@ a{
       height: auto;    
   }
 }
+
+
+
