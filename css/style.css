@@ -26,6 +26,12 @@ a{
   color: #E33532;
 }
 
+.logoFooter{
+  width: 25rem;
+  height: auto;
+  margin-left: 10rem;
+}
+
 /*NAV BAR STYLE*/
 .header{
   background-color: #E33532;
@@ -83,12 +89,7 @@ a{
 
 .footer{
   background-color: #E33532;
-}
-
-.footer_copyright{
-  font-size: 1rem;
-  font-weight: bolder;
-  align-self: end;
+  justify-content: space-between;
 }
 
 .a__img{
@@ -100,11 +101,6 @@ a{
 .a__img:hover{
   transform: scale(1.5);    
   transition: ease-out 0.3s;
-}
-
-.logoFooter{
-  width: 25rem;
-  height: auto;
 }
 
 /*MARKETING*/
@@ -461,6 +457,15 @@ a{
 
 @media (max-width: 992px){
   /*HEADER*/
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoFooter{
+    margin-left: auto;
+  }
 
   #navbarNav{
     margin-right: 23%;
