@@ -104,13 +104,7 @@ a{
 }
 
 /*INDEX-SLIDER SECTION STYLE*/ 
-.carousel-item{
-  height: auto;
-}
 
-.carousel-item img{
-  height: 90vh;
-}
 
 /*INDEX-HIGHLIGHTS SECTION STYLE*/
 .products__section{  
@@ -197,7 +191,6 @@ a{
   transform: scale(1.1);
 }
 
-
 /*PRODUCTS PAGE STYLE*/
 .section__products{
   margin: 8rem 2rem 10rem 2rem;
@@ -208,11 +201,17 @@ a{
   margin-left: 2rem;
 }
 
+.section__products .card{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 15px;
+  height: 60rem;
+}
+
 .products__img{
-  width:40rem;
+  width:38rem;
   height:30rem;
   border-radius: 15px;
-  margin: 1rem auto;
+  margin: 1rem auto; 
 }
 
 /*FINDUS PAGE STYLE*/
