@@ -29,25 +29,36 @@ a{
 /*NAV BAR STYLE*/
 .header{
   background-color: #E33532;
-  padding: 2rem 1rem;
+  height: 7rem;
+}
+
+.header img{
+  height: 6rem;
+  width: auto;
 }
 
 .header__content{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .content__navbar{
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 
 .content__navbar li{
-  margin: 0 1rem;
+  margin: 0 2.5rem;
   transition: transform 0.3s;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.content__navbar li:hover{
+  transform: scale(1.2);    
+  transition: ease-out 0.2s;
 }
 
 .content__navbar li a{
@@ -56,20 +67,30 @@ a{
 }
 
 .content__navbar li a:hover{
-  transform: scale(1.5);    
-  transition: ease-out 0.3s;
+  transform: scale(5.2);    
+  transition: ease-out 0.2s;
   color: #DEC513;
 }
 
 /*FOOTER STYLE*/
+.container footer{
+  width: 100%;
+}
+
 .footer{
   background-color: #E33532;
+}
+
+.footer_copyright{
+  font-size: 1rem;
+  font-weight: bolder;
+  align-self: end;
 }
 
 .a__img{
   width: 3rem;
   height: 3rem;
-  transition: transform 0.3s
+  transition: transform 0.3s;
 }
 
 .a__img:hover{
@@ -83,30 +104,34 @@ a{
 }
 
 /*INDEX-SLIDER SECTION STYLE*/ 
+.carousel-item{
+  height: auto;
+}
 
+.carousel-item img{
+  height: 90vh;
+}
 
 /*INDEX-HIGHLIGHTS SECTION STYLE*/
-.sectionInfo{
-  margin-bottom: 10rem;
+.products__section{  
+  margin: 15rem 0;
+  display: grid;
+  justify-items: center;
+  row-gap: 5rem;
+}
+
+.card.mb-3{
+  max-width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .info__container{
   backdrop-filter: blur(15px);    
 }
 
-.info__img{
-  display: flex;
-  margin: auto;
-  height: 60rem;
-  width: 80rem;
-  justify-items: center;
-  border-radius: 10px;
-}
-
 .card-text{
   font-size: 2rem;
 }
-
 
 /*INDEX - GALMA DECO STYLE*/
 .sectionGalma{
