@@ -102,15 +102,29 @@ a{
   height: auto;
 }
 
-/*INDEX-SLIDER SECTION STYLE*/ 
+/*MARKETING*/
+.marketing{
+  margin-top: 15rem;
+  font-size: 2rem;
+}
 
+.marketing a{
+  font-size: large;
+}
+.marketing__section{
+  text-align: center;
+}
+
+.marketing_item img{
+  width: 30rem;
+  height: 30rem;
+}
 
 /*INDEX-HIGHLIGHTS SECTION STYLE*/
 .products__section{  
-  margin: 15rem 0;
+  margin: 10rem 0;
   display: grid;
   justify-items: center;
-  row-gap: 5rem;
 }
 
 .card.mb-3{
@@ -124,6 +138,7 @@ a{
 
 .card-text{
   font-size: 2rem;
+  text-align: left;
 }
 
 /*INDEX - GALMA DECO STYLE*/
