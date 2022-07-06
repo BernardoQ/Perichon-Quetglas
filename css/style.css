@@ -35,21 +35,12 @@ a{
 /*NAV BAR STYLE*/
 .header{
   background-color: #E33532;
-<<<<<<< HEAD
-  height: 7rem;
-}
-
-.header img{
-  height: 6rem;
-  width: auto;
-=======
 }
 
 .header img{
   height: 7rem;
   width: auto;
   margin-left: 3rem;
->>>>>>> 81708c940e20c79d06c77f37b73c571a1c60db59
 }
 
 .header__content{
@@ -62,13 +53,10 @@ a{
   display: flex;
   align-items: center;
   justify-content: end;
-<<<<<<< HEAD
-=======
 }
 
 #navbarNav{
   flex-direction: row-reverse;
->>>>>>> 81708c940e20c79d06c77f37b73c571a1c60db59
 }
 
 .content__navbar li{
@@ -102,12 +90,6 @@ a{
 .footer{
   background-color: #E33532;
   justify-content: space-between;
-}
-
-.footer_copyright{
-  font-size: 1rem;
-  font-weight: bolder;
-  align-self: end;
 }
 
 .a__img{
@@ -146,16 +128,9 @@ a{
 
 /*INDEX-HIGHLIGHTS SECTION STYLE*/
 .products__section{  
-<<<<<<< HEAD
-  margin: 15rem 0;
-  display: grid;
-  justify-items: center;
-  row-gap: 5rem;
-=======
   margin: 10rem 0;
   display: grid;
   justify-items: center;
->>>>>>> 81708c940e20c79d06c77f37b73c571a1c60db59
 }
 
 .card.mb-3{
@@ -438,8 +413,6 @@ a{
 
 /*MEDIA QUERIES*/
 @media (max-width: 1260px){
-<<<<<<< HEAD
-=======
   .header__content{
     justify-content: center;
   }
@@ -447,7 +420,6 @@ a{
   .header a{
     margin:auto
   }
->>>>>>> 81708c940e20c79d06c77f37b73c571a1c60db59
 
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
