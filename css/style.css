@@ -32,8 +32,9 @@ a{
 }
 
 .header img{
-  height: 6rem;
+  height: 7rem;
   width: auto;
+  margin-left: 3rem;
 }
 
 .header__content{
@@ -46,6 +47,10 @@ a{
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+#navbarNav{
+  flex-direction: row-reverse;
 }
 
 .content__navbar li{
@@ -110,6 +115,10 @@ a{
 
 .marketing a{
   font-size: large;
+}
+
+.marketing h2{
+  font-size: 3rem;
 }
 
 .marketing__section{
@@ -502,7 +511,14 @@ a{
 }
 
 @media (max-width: 768px){ 
-  /*FOOTER*/
+  /*HEADER*/
+  .content__navbar{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
 
 
   /*HIGHLIGHTS PAGE MEDIA*/
@@ -640,7 +656,7 @@ a{
   }
 
   .sectionGalma__products img{
-      width: 70vw;
+      width: 60vw;
       height: auto;    
   }
 }
@@ -656,7 +672,7 @@ a{
   }
 
   .sectionGalma__products img{
-      width: 70vw;
+      width: 60vw;
       height: auto;    
   }
 }
