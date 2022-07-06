@@ -414,6 +414,13 @@ a{
 
 /*MEDIA QUERIES*/
 @media (max-width: 1260px){
+  .header__content{
+    justify-content: center;
+  }
+
+  .header a{
+    margin:auto
+  }
 
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
@@ -450,30 +457,34 @@ a{
 }
 
 @media (max-width: 992px){
-  /*FOOTER*/
+  /*HEADER*/
 
+  #navbarNav{
+    margin-right: 23%;
+  }
+  
 
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
   }
 
   .sectionGalma__products img{
-      width: 25rem;        
-      height: 25rem;    
+    width: 25rem;        
+    height: 25rem;    
   }
 
 
   /*FIND US PAGE MEDIA*/
   .findUs__grid{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: space-evenly;
-      justify-items: center;
-      align-items: center;
-      width: fit-content;
-      margin: 5rem auto auto auto;
-      column-gap: 3rem;
-      row-gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    width: fit-content;
+    margin: 5rem auto auto auto;
+    column-gap: 3rem;
+    row-gap: 3rem;
   }
 
   /*ABOUT US PAGE MEDIA*/
@@ -485,20 +496,20 @@ a{
   }
 
   .aboutUs__text{
-      display: inline-block;
-      justify-content: left;
-      text-align: left;
-      width: 90%;
-      margin: 5rem 5rem 5rem 2rem;
-      line-height: 2em;
-      font-size: 2rem;
+    display: inline-block;
+    justify-content: left;
+    text-align: left;
+    width: 90%;
+    margin: 5rem 5rem 5rem 2rem;
+    line-height: 2em;
+    font-size: 2rem;
   }   
   
   .video{
-      width: 90vw;
-      height: auto;
-      margin-bottom: 10rem;
-      justify-content: center;  
+    width: 90vw;
+    height: auto;
+    margin-bottom: 10rem;
+    justify-content: center;  
   }
 
   /*CONTACT PAGE MEDIA*/
