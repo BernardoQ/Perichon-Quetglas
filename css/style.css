@@ -113,7 +113,8 @@ a{
   font-size: large;
 }
 
-.marketing h2{
+.marketing_item h2{
+  margin-top: 3rem;
   font-size: 3rem;
 }
 
@@ -457,6 +458,9 @@ a{
 
 @media (max-width: 992px){
   /*HEADER*/
+  .marketing_item{
+    margin-bottom: 5rem;
+  }
 
   .footer{
     display: flex;
