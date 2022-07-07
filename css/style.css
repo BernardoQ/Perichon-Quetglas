@@ -430,10 +430,7 @@ a{
       width: 30rem;        
       height: 30rem;    
   }
-
-  /*PRODUCTOS PAGE MEDIA*/
-
-
+  
   /*FIND US PAGE MEDIA*/
   .findUs__grid{
       display: grid;
@@ -500,23 +497,6 @@ a{
   }
 
   /*ABOUT US PAGE MEDIA*/
-  .aboutUs__grid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      justify-items: center;
-      margin-bottom: 10rem;
-  }
-
-  .aboutUs__text{
-    display: inline-block;
-    justify-content: left;
-    text-align: left;
-    width: 90%;
-    margin: 5rem 5rem 5rem 2rem;
-    line-height: 2em;
-    font-size: 2rem;
-  }   
-  
   .video{
     width: 90vw;
     height: auto;
@@ -542,37 +522,13 @@ a{
     padding: 1rem;
   }
 
-
-
-  /*HIGHLIGHTS PAGE MEDIA*/
-
   .sectionGalma__products img{
       width: 25rem;        
       height: 25rem;    
   }
 
-  /*PRODUCT PAGE MEDIA*/
- 
-
   /*ABOUT US PAGE MEDIA*/
-  .aboutUs__grid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      justify-items: center;
-  }
-
-  .aboutUs__text{
-      display: inline-block;
-      justify-content: left;
-      text-align: left;
-      width: 90%;
-      margin: 5rem 5rem 5rem 2rem;
-      line-height: 2em;
-      font-size: 2rem;
-      font-family: 'Montserrat', sans-serif;
-  }
-
-  .video{
+   .video{
       width: 90vw;
       height: auto;
       margin-bottom: 5rem;
@@ -602,12 +558,6 @@ a{
 }
 
 @media (max-width: 576px){
-  /*HEADER*/
- 
-
-  /*FOOTER*/
- 
-
   /*GALMA SECTION*/
   .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
@@ -617,9 +567,6 @@ a{
       width: 15rem;        
       height: 15rem;    
   }
-
-  /*PRODUCTS PAGE MEDIA*/
- 
 
   /*FIND US PAGE MEDIA*/
   .findUs__grid{
@@ -635,22 +582,6 @@ a{
   }
 
   /*ABOUT US PAGE MEDIA*/
-  .aboutUs__grid{
-      margin-bottom: 5rem;
-  }
-
-  .aboutUs__text{
-      display: inline-block;
-      justify-content: center;
-      text-align: left;
-      width: 90%;
-      height: 50%;
-      margin: 5rem 5rem 5rem 2rem;
-      line-height: 1.5em;
-      font-size: 2rem;
-      font-family: 'Montserrat', sans-serif;
-  }
-
   .video{
       width: 90vw;
       height: auto;
@@ -659,7 +590,6 @@ a{
   }
 
   /*CONTACT PAGE MEDIA*/
-
   .contact__grid{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
