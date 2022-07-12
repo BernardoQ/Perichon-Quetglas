@@ -133,7 +133,7 @@ a{
   justify-items: center;
 }
 
-.card.mb-3{
+.products_section .card.mb-3{
   max-width: 60%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -537,12 +537,9 @@ a{
     flex-direction: column;
     padding: 1rem;
   }
-
-
-
   /*HIGHLIGHTS PAGE MEDIA*/
 
-  .sectionGalma__products img{
+    .sectionGalma__products img{
       width: 25rem;        
       height: 25rem;    
   }
