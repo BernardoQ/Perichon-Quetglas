@@ -1,0 +1,22 @@
+{
+  "name": "perichon-quetglas",
+  "version": "1.0.0",
+  "description": "Iniciando SASS",
+  "main": "index.js",
+  "scripts": {    
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoQ/Perichon-Quetglas.git"
+  },
+  "author": "Quetglas Bernardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BernardoQ/Perichon-Quetglas/issues"
+  },
+  "homepage": "https://github.com/BernardoQ/Perichon-Quetglas#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
