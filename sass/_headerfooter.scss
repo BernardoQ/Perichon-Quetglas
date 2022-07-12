@@ -6,6 +6,11 @@
   height: auto;
   margin-left: 10rem;
   margin-top: 1rem;
+
+    &:hover{
+      animation: bounce 1s;
+    }
+  
 }
 
 @keyframes bounce {
@@ -24,11 +29,6 @@
     transform: translateY(-10px);
   }
 }
-
-.logoFooter:hover{
-  animation: bounce 1s;
-}
-
 
 /*----------NAV BAR STYLE----------*/
 .header{
@@ -59,7 +59,7 @@
       font-size: 1.5rem;
       font-weight: 600;
     
-        &hover{
+        &:hover{
           transform: scale(1.2);    
           transition: ease-out 0.2s;
         }
@@ -68,7 +68,7 @@
             color: #292929;
             transition: transform 0.3s;
           
-              &hover{
+              &:hover{
                 transform: scale(5.2);    
                 transition: ease-out 0.2s;
                 color: $brandYellow;
@@ -97,7 +97,7 @@
   height: 3rem;
   transition: transform 0.3s;
 
-    &hover{
+    &:hover{
       transform: scale(1.5);    
       transition: ease-out 0.3s;
     }
