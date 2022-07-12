@@ -148,6 +148,10 @@ a{
   text-align: left;
 }
 
+.h3{
+  font-size: 3rem;
+}
+
 /*----------NDEX - GALMA DECO STYLE----------*/
 .sectionGalma{
   margin-bottom: 10rem;
@@ -278,7 +282,7 @@ a{
 
 .about__text{
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   align-items: center;
 }
 
@@ -287,8 +291,8 @@ a{
 }
 
 .video{
-  width: 70rem;
-  height: 38.5rem;
+  width: 60rem;
+  height: 33rem;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
 }
 
@@ -428,7 +432,13 @@ a{
   .sectionGalma__products img{
     width: 30rem;        
     height: 30rem;    
-  }
+  } 
+
+     /*----------PRODUCTS PAGE CARDS----------*/
+     .products__img{
+      width: 36rem;
+    }
+
   /*----------FIND US PAGE MEDIA----------*/
   .findUs__grid{
     display: grid;
@@ -479,6 +489,11 @@ a{
     height: 25rem;    
   }
 
+   /*----------PRODUCTS PAGE CARDS----------*/
+   .products__img{
+    width: 36rem;
+  }
+
   /*----------FIND US PAGE MEDIA----------*/
   .findUs__grid{
     display: grid;
@@ -493,14 +508,14 @@ a{
   }
 
   /*----------ABOUT US PAGE MEDIA----------*/
-.sectionAboutUs{
-  text-align: -webkit-center;
-}
+  .sectionAboutUs{
+    text-align: -webkit-center;
+  }
 
   .video{
-    width: fit-content;
+    width: 80vw;
     height: auto;
-    margin-bottom: 10rem;
+    margin: auto;
     justify-content: center;  
   }
 
@@ -510,6 +525,11 @@ a{
     grid-template-columns: repeat(1, 1fr);
     justify-self: center;
     justify-items: center;
+  }
+
+  .form__img{
+    width: 80vw;
+    height: auto;
   }
 }
 
@@ -526,17 +546,15 @@ a{
       width: 25rem;        
       height: 25rem;    
   }
+  
+  /*----------HIGHLIGHTS CARDS----------*/ 
+  .card.mb-3{
+    max-width: 80%;
+  }
 
   /*----------ABOUT US PAGE MEDIA----------*/
   .sectionAboutUs{
     text-align: -webkit-center;
-  }
-
-  .video{
-    width: fit-content;
-    height: auto;
-    margin-bottom: 5rem;
-    justify-content: center;  
   }
 
   /*----------FIND US PAGE MEDIA----------*/
@@ -562,6 +580,11 @@ a{
 }
 
 @media (max-width: 576px){
+  /*----------PRODUCTS PAGE CARDS----------*/
+  .products__img{
+    width: 35rem;
+  }
+
   /*----------GALMA SECTION----------*/
   .sectionGalma__products{
     grid-template-columns: repeat(2,1fr);
@@ -588,9 +611,6 @@ a{
   /*----------ABOUT US PAGE MEDIA----------*/
   .video{
     width: 90vw;
-    height: auto;
-    margin-bottom: 5rem;
-    justify-content: center;  
   }
 
   /*----------CONTACT PAGE MEDIA----------*/
@@ -619,6 +639,12 @@ a{
 }
 
 @media (max-width: 380px){
+  /*----------PRODUCTS PAGE CARDS----------*/
+  .products__img{
+    width: 25rem;
+  }
+
+  
   .sectionGalma__products{
     grid-template-columns: 1fr;
   }  
