@@ -63,22 +63,22 @@
           transform: scale(1.2);    
           transition: ease-out 0.2s;
         }
+
+          a{
+            color: #292929;
+            transition: transform 0.3s;
+          
+              &hover{
+                transform: scale(5.2);    
+                transition: ease-out 0.2s;
+                color: $brandYellow;
+              }
+          }
     }
 }
 
 #navbarNav{
   flex-direction: row-reverse;
-}
-
-.content__navbar li a{
-  color: #292929;
-  transition: transform 0.3s;
-
-    &hover{
-      transform: scale(5.2);    
-      transition: ease-out 0.2s;
-      color: $brandYellow;
-    }
 }
 
 
