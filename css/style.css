@@ -30,6 +30,7 @@ a{
   width: 25rem;
   height: auto;
   margin-left: 10rem;
+  margin-top: 1rem;
 }
 
 @keyframes bounce {
@@ -111,7 +112,6 @@ a{
 .footer{
   background-color: #E33532;
   justify-content: space-between;
-  height: 13rem;
 }
 
 .a__img{
