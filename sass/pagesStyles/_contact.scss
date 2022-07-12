@@ -1,0 +1,119 @@
+
+/*----------CONTACT PAGE STYLE----------*/
+.contact .section__title{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.contact__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10rem;
+}
+
+.contact__form{
+    border: solid 1px #474544;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #999;
+}
+
+#name{
+    grid-area: name;
+}
+
+#lastName{
+    grid-area: lastName;
+}
+
+#email{
+    grid-area: email;
+}
+
+#subject{
+    grid-area: subject;
+}
+
+#message{
+    grid-area: message;
+}
+
+#sendButton{
+    grid-area: sendButton;    
+    width: 100%;
+}
+
+.form__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:auto;
+    grid-template-areas: 
+    "name lastName"
+    "email subject"
+    "message message"
+    "message message"
+    "sendButton sendButton";
+}
+
+.form--item{
+    margin: 2rem auto 0.5rem auto;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+}
+
+.form--label{
+    text-align: center;
+    font-weight: bold;
+    color: #292929;
+}
+
+.form--text{
+    border: none;
+    border-bottom: solid 1px #474544;
+    padding: 1rem;
+    justify-items: center; 
+    font-family: 'Montserrat', sans-serif;
+    width: 90%; 
+}
+
+#message .form--text{
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 9.5rem;
+    margin-bottom: -2.5rem;
+}
+
+.btn--input{
+    all: unset;
+}
+
+.form--text:focus{
+    border-color: #E33532;
+}
+
+.button{
+    background: #E33532;
+    text-decoration: none;
+    border-color: #E33532;
+    border-radius: 15px;
+    height: 5rem;
+    width: 20rem;
+    font: 1.5rem;
+    font-weight: bold;
+    text-shadow: none;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    color: #DEC513;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.form__img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+}

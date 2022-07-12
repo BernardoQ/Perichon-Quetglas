@@ -1,566 +1,359 @@
 @import 'global';
 @import 'header-footer';
+@import 'pagesStyles/products';
+@import 'agesStyles/aboutus';
+@import 'agesStyles/contact';
+@import 'agesStyles/findus';
+@import 'variables';
 
   
+  
+/*----------INDEX - MARKETING----------*/
+.marketing{
+  margin-top: 15rem;
+  font-size: 2rem;
 
-  
+    .marketing__cards{
+      text-align: center;
 
+      .marketing__cards--item{
+        h2{
+          margin-top: 3rem;
+          font-size: $h2;       
+        }
+    
+        img{
+          width: 30rem;
+          height: 30rem;        
+        }
+        
+        a{
+          font-size: large;
+        }
+      }
+    }
+}
+ 
   
+/*----------INDEX - HIGHLIGHTS----------*/
+.products__section{  
+  margin: 10rem 0;
+  display: grid;
+  justify-items: center;
+}
+
+.card.mb-3{
+  max-width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info__container{
+  backdrop-filter: blur(15px);    
+}
+
+.card-text{
+  font-size: 2rem;
+  text-align: left;
+}
+
+.h3{
+  font-size: $h3;
+}
   
-  
-  /*----------MARKETING----------*/
-  .marketing{
-    margin-top: 15rem;
-    font-size: 2rem;
-  }
-  
-  .marketing a{
-    font-size: large;
-  }
-  
-  .marketing_item h2{
-    margin-top: 3rem;
-    font-size: 3rem;
-  }
-  
-  .marketing__section{
-    text-align: center;
-  }
-  
-  .marketing_item img{
-    width: 30rem;
-    height: 30rem;
-  }
-  
-  /*----------INDEX-HIGHLIGHTS SECTION STYLE----------*/
-  .products__section{  
-    margin: 10rem 0;
-    display: grid;
-    justify-items: center;
-  }
-  
-  .card.mb-3{
-    max-width: 60%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  
-  .info__container{
-    backdrop-filter: blur(15px);    
-  }
-  
-  .card-text{
-    font-size: 2rem;
-    text-align: left;
-  }
-  
-  .h3{
-    font-size: 3rem;
-  }
-  
-  /*----------NDEX - GALMA DECO STYLE----------*/
-  .sectionGalma{
-    margin-bottom: 10rem;
-  }
-  
-  .sectionGalma__div--a{
+/*----------NDEX - GALMA DECO----------*/
+.sectionGalma{
+  margin-bottom: 10rem;
+
+  .sectionGalma__logo--a{
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+
+    #galmaLogo{
+      width: 35rem;
+      height: 15rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
   }
-  
-  #galmaLogo{
-    width: 35rem;
-    height: 15rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-  }
-  
-  .galmaImg{
-    width: 20rem;
-    height: 20rem; 
-  }
-  
-  .sectionGalma__div--text{
+}
+
+.sectionGalma__products{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  justify-items: center;
+  column-gap: 1rem;
+  width: fit-content;
+  margin: auto;
+
+    img{
+      width: 20rem;
+      height: 20rem;    
+      border-radius: 10px;
+    }
+}
+
+#galmaLogo{
+  transition: transform 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: ease-out 0.3s;
+  margin-bottom: 5rem;
+}
+
+#galmaLogo:hover{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transform: scale(1.1);
+}  
+
+/*----------MEDIA QUERIES----------*/
+@media (max-width: 1260px){
+  .header__content{
     justify-content: center;
-    text-align: center;
-    margin: 3rem 25vw 5rem 25vw;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
   }
-  
-  .galmaProducts__img{
-    width:1rem;
-    height: 1rem;
+
+  .header a{
+    margin:auto
   }
-  
-  .sectionGalma__products img{
-    width: 20rem;
-    height: 20rem;    
-    border-radius: 10px;
-  }
-  
+
   .sectionGalma__products{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-around;
-    justify-items: center;
-    column-gap: 1rem;
-    width: fit-content;
-    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+
+    img{
+      width: 30rem;        
+      height: 30rem;    
+    } 
   }
-  
-  #galmaLogo{
-    transition: transform 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: ease-out 0.3s;
-    margin-bottom: 5rem;
-  }
-  
-  #galmaLogo:hover{
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    transform: scale(1.1);
-  }
-  
-  /*----------PRODUCTS PAGE STYLE----------*/
-  .section__products{
-    margin: 8rem 2rem 10rem 2rem;
-  }
-  
-  .products__caract li{
-    list-style: circle;
-    margin-left: 2rem;
-  }
-  
-  .section__products .card{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 15px;
-    height: 62rem;
-  }
-  
+
+
+  /*----------PRODUCTS PAGE CARDS----------*/
   .products__img{
-    width:38rem;
-    height:30rem;
-    border-radius: 15px;
-    margin: 1rem auto; 
+    width: 36rem;
   }
-  
-  /*----------FINDUS PAGE STYLE----------*/
-  .section__findUs{
-    margin-top: 5rem;
-    margin-bottom: 15rem;
-  }
-  
+
+  /*----------FIND US PAGE MEDIA----------*/
   .findUs__grid{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
     width: fit-content;
     margin: 5rem auto auto auto;
-    column-gap: 5rem;
-    row-gap: 5rem;
-  }
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }  
   
-  .grid__clientLogo img{
-    width: 15rem;
+  /*----------ABOUT US PAGE MEDIA----------*/
+  .video{
+    width: 50vw;
     height: auto;
-    border-radius: 5px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    transition: transform 0.3s
+    margin-bottom: 10rem;
+    justify-content: center;  
   }
-  
-  .grid__clientLogo img:hover{
-    transform: scale(1.2);    
-    transition: ease-out 0.3s;
-  }
-  
-  /*----------ABOUT US PAGE STYLE----------*/
-  .sectionAboutUs{
-    margin-top: 5rem;
+}
+
+@media (max-width: 992px){
+  /*----------HEADER----------*/
+  .marketing_item{
     margin-bottom: 5rem;
   }
-  
-  .sectionAboutUs h2{
-    margin-bottom: 3rem;
+
+  .footer{
+    display: flex;
+    flex-direction: column;
   }
-  
-  .about__text{
-    font-size: 2rem;
-    text-align: left;
-    align-items: center;
+
+  .logoFooter{
+    margin-left: auto;
   }
-  
-  .about__text h3{
-    font-size: 3rem;
+
+  #navbarNav{
+    margin-right: 23%;
   }
-  
-  .video{
-    width: 60rem;
-    height: 33rem;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
-  }
-  
-  /*----------CONTACT PAGE STYLE----------*/
-  .contact .section__title{
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-  }
-  
-  .contact__grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 10rem;
-  }
-  
-  .contact__form{
-    border: solid 1px #474544;
-    width: 100%;
-    font-size: 1.5rem;
-    color: #999;
-  }
-  
-  #name{
-    grid-area: name;
-  }
-  
-  #lastName{
-    grid-area: lastName;
-  }
-  
-  #email{
-    grid-area: email;
-  }
-  
-  #subject{
-    grid-area: subject;
-  }
-  
-  #message{
-    grid-area: message;
-  }
-  
-  #sendButton{
-    grid-area: sendButton;    
-    width: 100%;
-  }
-  
-  .form__grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:auto;
-    grid-template-areas: 
-    "name lastName"
-    "email subject"
-    "message message"
-    "message message"
-    "sendButton sendButton";
-  }
-  
-  .form--item{
-    margin: 2rem auto 0.5rem auto;
-    justify-content: center;
-    text-align: center;
-    padding: auto;
-  }
-  
-  .form--label{
-    text-align: center;
-    font-weight: bold;
-    color: #292929;
-  }
-  
-  .form--text{
-    border: none;
-    border-bottom: solid 1px #474544;
-    padding: 1rem;
-    justify-items: center; 
-    font-family: 'Montserrat', sans-serif;
-    width: 90%; 
-  }
-  
-  #message .form--text{
-    padding-left: 15rem;
-    padding-right: 15rem;
-    padding-bottom: 9.5rem;
-    margin-bottom: -2.5rem;
-  }
-  
-  .btn--input{
-   all: unset;
-  }
-  
-  .form--text:focus{
-    border-color: #E33532;
-  }
-  
-  .button{
-    background: #E33532;
-    text-decoration: none;
-    border-color: #E33532;
-    border-radius: 15px;
-    height: 5rem;
-    width: 20rem;
-    font: 1.5rem;
-    font-weight: bold;
-    text-shadow: none;
-    transition: transform 0.3s;
-  }
-  
-  .button:hover {
-    color: #DEC513;
-    text-decoration: none;
-    transform: scale(1.1);
-  }
-  
-  .form__img{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border-radius: 5px;
-  }
-  
-  /*----------MEDIA QUERIES----------*/
-  @media (max-width: 1260px){
-    .header__content{
-      justify-content: center;
-    }
-  
-    .header a{
-      margin:auto
-    }
-  
-    .sectionGalma__products{
+
+  .sectionGalma__products{
       grid-template-columns: repeat(2,1fr);
-    }
-  
-    .sectionGalma__products img{
-      width: 30rem;        
-      height: 30rem;    
-    } 
-  
-       /*----------PRODUCTS PAGE CARDS----------*/
-       .products__img{
-        width: 36rem;
-      }
-  
-    /*----------FIND US PAGE MEDIA----------*/
-    .findUs__grid{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      justify-content: space-evenly;
-      justify-items: center;
-      align-items: center;
-      width: fit-content;
-      margin: 5rem auto auto auto;
-      column-gap: 2rem;
-      row-gap: 2rem;
-    }  
-    
-    /*----------ABOUT US PAGE MEDIA----------*/
-    .video{
-      width: 50vw;
-      height: auto;
-      margin-bottom: 10rem;
-      justify-content: center;  
-    }
-  }
-  
-  @media (max-width: 992px){
-    /*----------HEADER----------*/
-    .marketing_item{
-      margin-bottom: 5rem;
-    }
-  
-    .footer{
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .logoFooter{
-      margin-left: auto;
-    }
-  
-    #navbarNav{
-      margin-right: 23%;
-    }
-  
-    .sectionGalma__products{
-        grid-template-columns: repeat(2,1fr);
-    }
-  
-    .sectionGalma__products img{
-      width: 25rem;        
-      height: 25rem;    
-    }
-  
-     /*----------PRODUCTS PAGE CARDS----------*/
-     .products__img{
-      width: 36rem;
-    }
-  
-    /*----------FIND US PAGE MEDIA----------*/
-    .findUs__grid{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: space-evenly;
-      justify-items: center;
-      align-items: center;
-      width: fit-content;
-      margin: 5rem auto auto auto;
-      column-gap: 3rem;
-      row-gap: 3rem;
-    }
-  
-    /*----------ABOUT US PAGE MEDIA----------*/
-    .sectionAboutUs{
-      text-align: -webkit-center;
-    }
-  
-    .video{
-      width: 80vw;
-      height: auto;
-      margin: auto;
-      justify-content: center;  
-    }
-  
-    /*----------CONTACT PAGE MEDIA----------*/
-    .contact__grid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      justify-self: center;
-      justify-items: center;
-    }
-  
-    .form__img{
-      width: 80vw;
-      height: auto;
-    }
-  }
-  
-  @media (max-width: 768px){ 
-    /*----------HEADER----------*/
-    .content__navbar{
-      flex-wrap: wrap;
-      align-items: flex-start;
-      flex-direction: column;
-      padding: 1rem;
-    }
-  
-    .sectionGalma__products img{
+
+      img{
         width: 25rem;        
         height: 25rem;    
-    }
-    
-    /*----------HIGHLIGHTS CARDS----------*/ 
-    .card.mb-3{
-      max-width: 80%;
-    }
-  
-    /*----------ABOUT US PAGE MEDIA----------*/
-    .sectionAboutUs{
-      text-align: -webkit-center;
-    }
-  
-    /*----------FIND US PAGE MEDIA----------*/
-    .findUs__grid{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: space-evenly;
-      justify-items: center;
-      align-items: center;
-      width: fit-content;
-      margin: 5rem auto auto auto;
-      column-gap: 2rem;
-      row-gap: 2rem;
-    }
-  
-    /*----------CONTACT PAGE MEDIA----------*/
-    .contact__grid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      justify-self: center;
-      justify-items: center;
-    }
+      }
+  }
+
+
+
+  /*----------PRODUCTS PAGE CARDS----------*/
+  .products__img{
+    width: 36rem;
+  }
+
+  /*----------FIND US PAGE MEDIA----------*/
+  .findUs__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    width: fit-content;
+    margin: 5rem auto auto auto;
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+
+  /*----------ABOUT US PAGE MEDIA----------*/
+  .sectionAboutUs{
+    text-align: -webkit-center;
+  }
+
+  .video{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    justify-content: center;  
+  }
+
+  /*----------CONTACT PAGE MEDIA----------*/
+  .contact__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    justify-items: center;
+  }
+
+  .form__img{
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px){ 
+  /*----------HEADER----------*/
+  .content__navbar{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .sectionGalma__products img{
+      width: 25rem;        
+      height: 25rem;    
   }
   
-  @media (max-width: 576px){
-    /*----------PRODUCTS PAGE CARDS----------*/
-    .products__img{
-      width: 35rem;
-    }
-  
-    /*----------GALMA SECTION----------*/
-    .sectionGalma__products{
-      grid-template-columns: repeat(2,1fr);
-    }
-  
-    .sectionGalma__products img{
+  /*----------HIGHLIGHTS CARDS----------*/ 
+  .card.mb-3{
+    max-width: 80%;
+  }
+
+  /*----------ABOUT US PAGE MEDIA----------*/
+  .sectionAboutUs{
+    text-align: -webkit-center;
+  }
+
+  /*----------FIND US PAGE MEDIA----------*/
+  .findUs__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    width: fit-content;
+    margin: 5rem auto auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  /*----------CONTACT PAGE MEDIA----------*/
+  .contact__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 576px){
+  /*----------PRODUCTS PAGE CARDS----------*/
+  .products__img{
+    width: 35rem;
+  }
+
+  /*----------GALMA SECTION----------*/
+  .sectionGalma__products{
+    grid-template-columns: repeat(2,1fr);
+
+    img{
       width: 15rem;        
       height: 15rem;    
-    }
-  
-    /*----------FIND US PAGE MEDIA----------*/
-    .findUs__grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: space-evenly;
-      justify-items: center;
-      align-items: center;
-      width: fit-content;
-      margin: 5rem auto auto auto;
-      column-gap: 1rem;
-      row-gap: 1rem;
-    }
-  
-    /*----------ABOUT US PAGE MEDIA----------*/
-    .video{
-      width: 90vw;
-    }
-  
-    /*----------CONTACT PAGE MEDIA----------*/
-    .contact__grid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      justify-self: center;
-      justify-items: center;
-    }
+    } 
   }
+
+  /*----------FIND US PAGE MEDIA----------*/
+  .findUs__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    width: fit-content;
+    margin: 5rem auto auto auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  /*----------ABOUT US PAGE MEDIA----------*/
+  .video{
+    width: 90vw;
+  }
+
+  /*----------CONTACT PAGE MEDIA----------*/
+  .contact__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 480px){
+  /*----------PRODUCTS PAGE CARDS----------*/
+
+  .sectionGalma__products{
+    grid-template-columns: 1fr;
+  }
+
+  #galmaLogo{
+    width: 90vw;
+    height: auto;
+  }
+
+  .sectionGalma__products img{
+    width: 60vw;
+    height: auto;    
+  }
+}
+
+@media (max-width: 380px){
+  /*----------GALMA----------*/
+  .products__img{
+    width: 25rem;
+  }
+
   
-  @media (max-width: 480px){
-    .sectionGalma__products{
-      grid-template-columns: 1fr;
-    }
-  
-    #galmaLogo{
-      width: 90vw;
-      height: auto;
-    }
-  
-    .sectionGalma__products img{
+  .sectionGalma__products{
+    grid-template-columns: 1fr;
+
+    img{
       width: 60vw;
       height: auto;    
     }
+  }  
+  
+  #galmaLogo{
+    width: 80vw;
+    height: auto;
   }
-  
-  @media (max-width: 380px){
-    /*----------PRODUCTS PAGE CARDS----------*/
-    .products__img{
-      width: 25rem;
-    }
-  
-    
-    .sectionGalma__products{
-      grid-template-columns: 1fr;
-    }  
-    
-    #galmaLogo{
-      width: 80vw;
-      height: auto;
-    }
-  
-    .sectionGalma__products img{
-      width: 60vw;
-      height: auto;    
-    }
-  }
+
+
+}

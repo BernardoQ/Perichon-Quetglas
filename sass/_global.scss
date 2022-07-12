@@ -1,19 +1,28 @@
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
   
-  html{
-    font-size: 62.5%;
-  }
+ul{
+  list-style: none;
+}
   
-  ul{
-    list-style: none;
-  }
-  
-  a{
-    text-decoration: none !important;
-  }
+a{
+  text-decoration: none !important;
+}
+
+.section__title{
+  font-family: 'Caudex', serif;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: $h2;
+  color: #E33532;
+}

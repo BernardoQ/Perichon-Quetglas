@@ -1,0 +1,27 @@
+
+/*----------ABOUT US PAGE STYLE----------*/
+.sectionAboutUs{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+        h2{
+        margin-bottom: 3rem;
+        }
+}
+
+.about__text{
+    font-size: 2rem;
+    text-align: left;
+    align-items: center;
+
+    h3{
+        font-size: $h3;
+    }    
+}
+
+
+.video{
+    width: 60rem;
+    height: 33rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+}
