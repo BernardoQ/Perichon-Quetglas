@@ -1,10 +1,10 @@
-
+@import 'variables';
 /*----------PRODUCTS PAGE STYLE----------*/
 .section__products{
   margin: 8rem 2rem 10rem 2rem;
 
     .card{
-      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      box-shadow: $cardShadow;
       border-radius: 15px;
       height: 62rem;
     }

@@ -1,10 +1,10 @@
 @import 'global';
 @import 'variables';
-@import './headerfooter';
-@import './products';
-@import './aboutus';
-@import './contact';
-@import './findus';
+@import 'headerfooter';
+@import '../pageStyle/products';
+@import '../pageStyle/aboutus';
+@import '../pageStyle/contact';
+@import '../pageStyle/findus';
 
   
   
@@ -17,9 +17,9 @@
       text-align: center;
 
       .marketing__cards--item{
-        h2{
+        h3{
           margin-top: 3rem;
-          font-size: $h2;       
+          font-size: $h3;
         }
     
         img{
@@ -44,7 +44,7 @@
 
 .card.mb-3{
   max-width: 60%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: $cardShadow;
 }
 
 .info__container{
@@ -74,6 +74,15 @@
       height: 15rem;
       border-radius: 10px;
       margin-bottom: 2rem;
+      transition: transform 0.5s;
+      box-shadow: $cardShadow;
+      transition: ease-out 0.3s;
+      margin-bottom: 5rem;
+
+        &:hover{
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          transform: scale(1.1);
+        }
     }
   }
 }
@@ -94,17 +103,6 @@
     }
 }
 
-#galmaLogo{
-  transition: transform 0.5s;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: ease-out 0.3s;
-  margin-bottom: 5rem;
-}
-
-#galmaLogo:hover{
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  transform: scale(1.1);
-}  
 
 /*----------MEDIA QUERIES----------*/
 @media (max-width: 1260px){
@@ -124,7 +122,6 @@
       height: 30rem;    
     } 
   }
-
 
   /*----------PRODUCTS PAGE CARDS----------*/
   .products__img{
@@ -180,8 +177,6 @@
         height: 25rem;    
       }
   }
-
-
 
   /*----------PRODUCTS PAGE CARDS----------*/
   .products__img{

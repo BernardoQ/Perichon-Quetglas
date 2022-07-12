@@ -1,4 +1,4 @@
-
+@import 'variables';
 /*----------CONTACT PAGE STYLE----------*/
 .contact .section__title{
     margin-top: 5rem;
@@ -36,6 +36,13 @@
 
 #message{
     grid-area: message;
+
+        .form--text{
+            padding-left: 15rem;
+            padding-right: 15rem;
+            padding-bottom: 9.5rem;
+            margin-bottom: -2.5rem;
+        }
 }
 
 #sendButton{
@@ -77,25 +84,18 @@
     width: 90%; 
 }
 
-#message .form--text{
-    padding-left: 15rem;
-    padding-right: 15rem;
-    padding-bottom: 9.5rem;
-    margin-bottom: -2.5rem;
-}
-
 .btn--input{
     all: unset;
 }
 
 .form--text:focus{
-    border-color: #E33532;
+    border-color: $brandRed;
 }
 
 .button{
-    background: #E33532;
+    background: $brandRed;
     text-decoration: none;
-    border-color: #E33532;
+    border-color: $brandRed;
     border-radius: 15px;
     height: 5rem;
     width: 20rem;
@@ -103,12 +103,12 @@
     font-weight: bold;
     text-shadow: none;
     transition: transform 0.3s;
-}
 
-.button:hover {
-    color: #DEC513;
-    text-decoration: none;
-    transform: scale(1.1);
+        &hover{
+            color: $brandYellow;
+            text-decoration: none;
+            transform: scale(1.1);
+        }
 }
 
 .form__img{

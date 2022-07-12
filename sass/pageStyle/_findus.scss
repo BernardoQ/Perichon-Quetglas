@@ -1,4 +1,4 @@
-
+@import 'variables';
 /*----------FINDUS PAGE STYLE----------*/
 .section__findUs{
     margin-top: 5rem;
@@ -21,7 +21,7 @@
     width: 15rem;
     height: auto;
     border-radius: 5px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: $cardShadow;
     transition: transform 0.3s
 }
 

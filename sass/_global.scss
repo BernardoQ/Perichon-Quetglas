@@ -1,4 +1,4 @@
-
+@import 'variables';
 *{
   margin: 0;
   padding: 0;
@@ -18,11 +18,12 @@ a{
   text-decoration: none !important;
 }
 
-.section__title{
+
+@mixin section__title{
   font-family: 'Caudex', serif;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 6rem;
-  color: #E33532;
+  font-size: $h2;
+  color: $brandRed;
 }

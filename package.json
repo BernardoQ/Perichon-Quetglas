@@ -4,7 +4,7 @@
   "description": "Iniciando SASS",
   "main": "index.js",
   "scripts": {    
-    "sass": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+    "sass": "node-sass --include-path sass ./sass/index.scss ../css/style.css -w"
   },
   "repository": {
     "type": "git",

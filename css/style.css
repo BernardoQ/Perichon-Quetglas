@@ -18,7 +18,7 @@ a {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 6rem;
+  font-size: 8rem;
   color: #E33532; }
 
 /*----------LOGO HEADER-FOOTER----------*/
@@ -104,7 +104,7 @@ a {
 .section__products {
   margin: 8rem 2rem 10rem 2rem; }
   .section__products .card {
-    box-shadow: #26394d 0px 20px 30px -10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
     height: 62rem; }
 
@@ -252,7 +252,7 @@ a {
   width: 15rem;
   height: auto;
   border-radius: 5px;
-  box-shadow: #26394d 0px 20px 30px -10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: transform 0.3s; }
 
 .grid__clientLogo img:hover {
@@ -265,9 +265,9 @@ a {
   font-size: 2rem; }
   .marketing .marketing__cards {
     text-align: center; }
-    .marketing .marketing__cards .marketing__cards--item h2 {
+    .marketing .marketing__cards .marketing__cards--item h3 {
       margin-top: 3rem;
-      font-size: 6rem; }
+      font-size: 3rem; }
     .marketing .marketing__cards .marketing__cards--item img {
       width: 30rem;
       height: 30rem; }
