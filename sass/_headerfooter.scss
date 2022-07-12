@@ -32,7 +32,7 @@
 
 /*----------NAV BAR STYLE----------*/
 .header{
-  background-color: #E33532;
+  background-color: $brandRed;
 }
 
 .header img{
@@ -77,7 +77,7 @@
 .content__navbar li a:hover{
   transform: scale(5.2);    
   transition: ease-out 0.2s;
-  color: #DEC513;
+  color: $brandYellow;
 }
 
 
@@ -87,7 +87,7 @@
 }
 
 .footer{
-  background-color: #E33532;
+  background-color: $brandRed;
   justify-content: space-between;
 }
 
