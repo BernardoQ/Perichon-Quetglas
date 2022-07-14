@@ -104,7 +104,7 @@
     text-shadow: none;
     transition: transform 0.3s;
 
-        &hover{
+        &:hover{
             color: $brandYellow;
             text-decoration: none;
             transform: scale(1.1);
