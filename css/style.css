@@ -211,7 +211,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "name lastName" "email subject" "message message" "message message" "sendButton sendButton"; }
+  grid-template-areas: "name lastName" "email subject" "message message" "message message" "sendButton sendButton"; }
 
 .form--item {
   margin: 2rem auto 0.5rem auto;
@@ -249,7 +249,7 @@ a {
   font-weight: bold;
   text-shadow: none;
   transition: transform 0.3s; }
-  .buttonhover {
+  .button:hover {
     color: #DEC513;
     text-decoration: none;
     transform: scale(1.1); }
