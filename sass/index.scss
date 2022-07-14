@@ -30,6 +30,11 @@
         a{
           font-size: large;
         }
+             
+        .btn{
+          padding-top: 1rem;
+          text-decoration: none;
+        }
       }
     }
 }
@@ -313,9 +318,12 @@
 }
 
 @media (max-width: 480px){
+
+  .section__title{
+    font-size: 7rem;
+  }
+
   /*----------PRODUCTS PAGE CARDS----------*/
-
-
   .sectionGalma__products{
     grid-template-columns: 1fr;
   }
@@ -332,8 +340,9 @@
 }
 
 @media (max-width: 380px){
+
   .section__title{
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   /*----------GALMA----------*/

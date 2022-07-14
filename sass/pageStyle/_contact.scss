@@ -92,25 +92,6 @@
     border-color: $brandRed;
 }
 
-.button{
-    background: $brandRed;
-    text-decoration: none;
-    border-color: $brandRed;
-    border-radius: 15px;
-    height: 5rem;
-    width: 20rem;
-    font: 1.5rem;
-    font-weight: bold;
-    text-shadow: none;
-    transition: transform 0.3s;
-
-        &:hover{
-            color: $brandYellow;
-            text-decoration: none;
-            transform: scale(1.1);
-        }
-}
-
 .form__img{
     width: 100%;
     height: auto;

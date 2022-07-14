@@ -21,6 +21,22 @@ a {
   font-size: 8rem;
   color: #E33532; }
 
+.button {
+  background: #E33532;
+  text-decoration: none;
+  border-radius: 15px;
+  height: 5rem;
+  width: 20rem;
+  font: 1.5rem;
+  font-weight: bold;
+  text-shadow: none;
+  transition: transform 0.3s; }
+  .button:hover {
+    background-color: #E33532 !important;
+    color: #DEC513;
+    text-decoration: none;
+    transform: scale(1.1); }
+
 /*----------LOGO HEADER-FOOTER----------*/
 .logoFooter {
   width: 25rem;
@@ -238,22 +254,6 @@ a {
 .form--text:focus {
   border-color: #E33532; }
 
-.button {
-  background: #E33532;
-  text-decoration: none;
-  border-color: #E33532;
-  border-radius: 15px;
-  height: 5rem;
-  width: 20rem;
-  font: 1.5rem;
-  font-weight: bold;
-  text-shadow: none;
-  transition: transform 0.3s; }
-  .button:hover {
-    color: #DEC513;
-    text-decoration: none;
-    transform: scale(1.1); }
-
 .form__img {
   width: 100%;
   height: auto;
@@ -301,6 +301,9 @@ a {
       height: 30rem; }
     .marketing .marketing__cards .marketing__cards--item a {
       font-size: large; }
+    .marketing .marketing__cards .marketing__cards--item .btn {
+      padding-top: 1rem;
+      text-decoration: none; }
 
 /*----------INDEX - HIGHLIGHTS----------*/
 .products__section {
@@ -502,6 +505,8 @@ a {
     justify-items: center; } }
 
 @media (max-width: 480px) {
+  .section__title {
+    font-size: 7rem; }
   /*----------PRODUCTS PAGE CARDS----------*/
   .sectionGalma__products {
     grid-template-columns: 1fr; }
@@ -513,6 +518,8 @@ a {
     height: auto; } }
 
 @media (max-width: 380px) {
+  .section__title {
+    font-size: 6rem; }
   /*----------GALMA----------*/
   .products__img {
     width: 25rem; }

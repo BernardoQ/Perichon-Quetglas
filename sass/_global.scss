@@ -27,3 +27,23 @@ a{
   font-size: $h2;
   color: $brandRed;
 }
+
+.button{
+  background: $brandRed;
+  text-decoration: none;
+  border-radius: 15px;
+  height: 5rem;
+  width: 20rem;
+  font: 1.5rem;
+  font-weight: bold;
+  text-shadow: none;
+  transition: transform 0.3s;   
+
+      &:hover{
+          background-color: $brandRed !important;
+          color: $brandYellow;
+          text-decoration: none;
+          transform: scale(1.1);
+      }
+}
+
