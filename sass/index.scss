@@ -315,6 +315,7 @@
 @media (max-width: 480px){
   /*----------PRODUCTS PAGE CARDS----------*/
 
+
   .sectionGalma__products{
     grid-template-columns: 1fr;
   }
@@ -331,6 +332,10 @@
 }
 
 @media (max-width: 380px){
+  .section__title{
+    font-size: 7rem;
+  }
+
   /*----------GALMA----------*/
   .products__img{
     width: 25rem;
