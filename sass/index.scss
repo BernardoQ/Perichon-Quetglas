@@ -5,7 +5,6 @@
 @import './pageStyle/aboutus';
 @import './pageStyle/contact';
 @import './pageStyle/findus';
-@import './pageStyle/mediaQuerys';
 
   
   
@@ -107,5 +106,240 @@
       border-radius: 10px;
     }
 }
+
+
+
+
+/*----------MEDIA QUERIES----------*/
+@media (max-width: 1260px){
+  .header__content{
+    justify-content: center;
+  }
+
+  .header a{
+    margin:auto
+  }
+
+ /*----------GALMA----------*/
+  .sectionGalma__products{
+    grid-template-columns: repeat(2,1fr);
+
+    img{
+      width: map-get($galmaImg, xl);       
+      height: map-get($galmaImg, xl);   
+    } 
+  }
+
+  /*----------PRODUCTS PAGE CARDS----------*/
+  .products__img{
+    width: 36rem;
+  }
+
+  /*----------FIND US PAGE MEDIA----------*/
+  .findUs__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5rem;
+    row-gap: 2rem;
+  }  
+  
+  /*----------ABOUT US PAGE MEDIA----------*/
+  .video{
+    width: 50vw;
+    height: auto;
+    margin-bottom: 10rem;
+    justify-content: center;  
+  }
+}
+
+@media (max-width: 992px){
+  /*----------HEADER----------*/
+  .content__navbar{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    height: 80vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: start;      
+    margin-top: 2rem;
+
+      li{
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+  }
+    
+  .nav-item{
+  padding: 2rem;
+  }
+
+  /*----------INDEX-MARKETING----------*/
+  .marketing_item{
+    margin-bottom: 5rem;
+  }
+
+  /*----------FOOTER----------*/
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoFooter{
+    margin-left: auto;
+  }
+
+  /*----------PRODUCTS PAGE CARDS----------*/
+
+  .sectionGalma__products{
+    grid-template-columns: repeat(2,1fr);
+
+    img{
+      width: map-get($galmaImg, lg);       
+      height: map-get($galmaImg, lg);   
+    } 
+  }
+
+  /*----------PRODUCTS PAGE CARDS----------*/
+  .products__img{
+    width: 36rem;
+  }
+
+  /*----------FIND US PAGE MEDIA----------*/
+  .findUs__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem auto auto auto;
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+
+  /*----------ABOUT US PAGE MEDIA----------*/
+  .sectionAboutUs{
+    text-align: -webkit-center;
+  }
+
+  .video{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    justify-content: center;  
+  }
+
+  /*----------CONTACT PAGE MEDIA----------*/
+  .contact__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    justify-items: center;
+  }
+
+  .form__img{
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px){ 
+  /*----------GALMA----------*/
+  .sectionGalma__products img{
+    width: map-get($galmaImg, md);       
+    height: map-get($galmaImg, md);     
+  }
+  
+  /*----------HIGHLIGHTS CARDS----------*/ 
+  .card.mb-3{
+    max-width: 80%;
+  }
+
+  /*----------ABOUT US PAGE MEDIA----------*/
+  .sectionAboutUs{
+    text-align: -webkit-center;
+  }
+
+  /*----------FIND US PAGE MEDIA----------*/
+  .findUs__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    row-gap: 3rem;
+  }
+
+  /*----------CONTACT PAGE MEDIA----------*/
+  .contact__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 576px){
+  /*----------PRODUCTS PAGE CARDS----------*/
+  .products__img{
+    width: 34rem;
+  }
+
+  /*----------GALMA SECTION----------*/
+  .sectionGalma__products{
+    grid-template-columns: repeat(2,1fr);
+
+    img{
+      width: map-get($galmaImg, sm);       
+      height: map-get($galmaImg, sm);     
+    } 
+  }
+
+  /*----------FIND US PAGE MEDIA----------*/
+  .findUs__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5rem auto auto auto;
+    column-gap: 4rem;
+    row-gap: 3rem;
+  }
+
+  /*----------ABOUT US PAGE MEDIA----------*/
+  .video{
+    width: 90vw;
+  }
+
+  /*----------CONTACT PAGE MEDIA----------*/
+  .contact__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 480px){
+
+  /*----------PRODUCTS PAGE CARDS----------*/
+  .sectionGalma__products{
+    img{
+      width: map-get($galmaImg, xs);       
+      height: map-get($galmaImg, xs);   
+    }
+  }
+}
+
+@media (max-width: 380px){
+ 
+  .products__img{
+    width: 25rem;
+  }
+
+  /*----------GALMA----------*/  
+  .sectionGalma__products{
+    img{
+      width: map-get($galmaImg, xs);       
+      height: map-get($galmaImg, xs);  
+    }
+  }  
+}
+
+
 
 
