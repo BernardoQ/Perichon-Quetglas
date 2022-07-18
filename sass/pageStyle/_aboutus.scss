@@ -1,11 +1,10 @@
 @import 'variables';
 /*----------ABOUT US PAGE STYLE----------*/
-.sectionAboutUs{
-     @extend %sectionTitle;
 
-        h2{
-        margin-bottom: 3rem;
-        }
+.sectionAboutUs{
+    h2{
+    @extend %sectionTitle;
+    }
 }
 
 .about__text{

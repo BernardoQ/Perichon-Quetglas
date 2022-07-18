@@ -19,12 +19,8 @@ a{
 }
 
 
-.section__title{
-  font-family: 'Caudex', serif;
-  text-align: center;
+.section__title{ 
   @extend %sectionTitle;
-  font-size: $h2;
-  color: $brandRed;
 }
 
 .button{
