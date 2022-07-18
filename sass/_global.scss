@@ -22,8 +22,7 @@ a{
 .section__title{
   font-family: 'Caudex', serif;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  @extend %sectionTitle;
   font-size: $h2;
   color: $brandRed;
 }
@@ -35,6 +34,7 @@ a{
   height: 5rem;
   width: 20rem;
   font: 1.5rem;
+  font-size: large;
   font-weight: bold;
   text-shadow: none;
   transition: transform 0.3s;   

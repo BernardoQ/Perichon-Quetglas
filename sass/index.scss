@@ -57,8 +57,7 @@
 }
 
 .card-text{
-  font-size: 2rem;
-  text-align: left;
+  @include card-text;
 }
 
 .h3{
@@ -85,7 +84,7 @@
       margin-bottom: 5rem;
 
         &:hover{
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 7px 15px 3px;
           transform: scale(1.1);
         }
     }
@@ -111,6 +110,7 @@
 
 /*----------MEDIA QUERIES----------*/
 @media (max-width: 1260px){
+
   .header__content{
     justify-content: center;
   }
@@ -119,12 +119,13 @@
     margin:auto
   }
 
+ /*----------GALMA----------*/
   .sectionGalma__products{
     grid-template-columns: repeat(2,1fr);
 
     img{
-      width: 30rem;        
-      height: 30rem;    
+      width: map-get($galmaImg, xl);       
+      height: map-get($galmaImg, xl);   
     } 
   }
 
@@ -137,12 +138,7 @@
   .findUs__grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    width: fit-content;
-    margin: 5rem auto auto auto;
-    column-gap: 2rem;
+    column-gap: 5rem;
     row-gap: 2rem;
   }  
   
@@ -156,11 +152,35 @@
 }
 
 @media (max-width: 992px){
+
   /*----------HEADER----------*/
+  .content__navbar{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    height: 80vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: start;      
+    margin-top: 2rem;
+
+      li{
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+  }
+    
+  .nav-item{
+  padding: 2rem;
+  }
+
+  /*----------INDEX-MARKETING----------*/
   .marketing_item{
     margin-bottom: 5rem;
   }
 
+  /*----------FOOTER----------*/
   .footer{
     display: flex;
     flex-direction: column;
@@ -170,18 +190,15 @@
     margin-left: auto;
   }
 
-  /*----------NAVBAR----------*/
-  #navbarNav{
-    margin-right: 50%;
-  }
+  /*----------PRODUCTS PAGE CARDS----------*/
 
   .sectionGalma__products{
-      grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
 
-      img{
-        width: 25rem;        
-        height: 25rem;    
-      }
+    img{
+      width: map-get($galmaImg, lg);       
+      height: map-get($galmaImg, lg);   
+    } 
   }
 
   /*----------PRODUCTS PAGE CARDS----------*/
@@ -193,10 +210,6 @@
   .findUs__grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    width: fit-content;
     margin: 5rem auto auto auto;
     column-gap: 3rem;
     row-gap: 3rem;
@@ -229,17 +242,11 @@
 }
 
 @media (max-width: 768px){ 
-  /*----------HEADER----------*/
-  .content__navbar{
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 1rem;
-  }
 
+  /*----------GALMA----------*/
   .sectionGalma__products img{
-      width: 25rem;        
-      height: 25rem;    
+    width: map-get($galmaImg, md);       
+    height: map-get($galmaImg, md);     
   }
   
   /*----------HIGHLIGHTS CARDS----------*/ 
@@ -256,13 +263,8 @@
   .findUs__grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    width: fit-content;
-    margin: 5rem auto auto auto;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    column-gap: 5rem;
+    row-gap: 3rem;
   }
 
   /*----------CONTACT PAGE MEDIA----------*/
@@ -277,7 +279,7 @@
 @media (max-width: 576px){
   /*----------PRODUCTS PAGE CARDS----------*/
   .products__img{
-    width: 35rem;
+    width: 34rem;
   }
 
   /*----------GALMA SECTION----------*/
@@ -285,8 +287,8 @@
     grid-template-columns: repeat(2,1fr);
 
     img{
-      width: 15rem;        
-      height: 15rem;    
+      width: map-get($galmaImg, sm);       
+      height: map-get($galmaImg, sm);     
     } 
   }
 
@@ -294,13 +296,9 @@
   .findUs__grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    width: fit-content;
     margin: 5rem auto auto auto;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    column-gap: 4rem;
+    row-gap: 3rem;
   }
 
   /*----------ABOUT US PAGE MEDIA----------*/
@@ -319,51 +317,26 @@
 
 @media (max-width: 480px){
 
-  .section__title{
-    font-size: 7rem;
-  }
-
   /*----------PRODUCTS PAGE CARDS----------*/
   .sectionGalma__products{
-    grid-template-columns: 1fr;
-  }
-
-  #galmaLogo{
-    width: 90vw;
-    height: auto;
-  }
-
-  .sectionGalma__products img{
-    width: 60vw;
-    height: auto;    
+    img{
+      width: map-get($galmaImg, xs);       
+      height: map-get($galmaImg, xs);   
+    }
   }
 }
 
 @media (max-width: 380px){
-
-  .section__title{
-    font-size: 6rem;
-  }
-
-  /*----------GALMA----------*/
+ 
   .products__img{
     width: 25rem;
   }
 
-  
+  /*----------GALMA----------*/  
   .sectionGalma__products{
-    grid-template-columns: 1fr;
-
     img{
-      width: 60vw;
-      height: auto;    
+      width: map-get($galmaImg, xs);       
+      height: map-get($galmaImg, xs);  
     }
   }  
-  
-  #galmaLogo{
-    width: 80vw;
-    height: auto;
-  }
-
-
 }

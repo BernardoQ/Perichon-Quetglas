@@ -1,17 +1,15 @@
 @import 'variables';
 /*----------FINDUS PAGE STYLE----------*/
 .section__findUs{
-    margin-top: 5rem;
-    margin-bottom: 15rem;
+    @extend %sectionTitle;
 }
 
 .findUs__grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    justify-content: space-evenly;
-    justify-items: center;
     align-items: center;
-    width: fit-content;
+    width: fit-content;    
+    padding: 0;
     margin: 5rem auto auto auto;
     column-gap: 5rem;
     row-gap: 5rem;

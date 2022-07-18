@@ -1,8 +1,7 @@
 @import 'variables';
 /*----------CONTACT PAGE STYLE----------*/
 .contact .section__title{
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+   @extend %sectionTitle;
 }
 
 .contact__grid{
