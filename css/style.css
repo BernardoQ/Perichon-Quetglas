@@ -438,9 +438,8 @@ a {
     justify-content: start;
     margin-top: 2rem; }
     .content__navbar li {
-      font-size: 3rem;
-      margin-top: 2rem;
-      padding: 3rem; }
+      font-size: 2rem;
+      padding: 2rem; }
   /*----------INDEX-MARKETING----------*/
   .marketing__cards--item {
     margin-bottom: 5rem; }
