@@ -327,7 +327,7 @@ a {
   .marketing .marketing__cards {
     text-align: center; }
     .marketing .marketing__cards .marketing__cards--item h3 {
-      margin-top: 3rem;
+      margin-top: 1rem;
       font-size: 3rem; }
     .marketing .marketing__cards .marketing__cards--item img {
       width: 30rem;
@@ -338,6 +338,7 @@ a {
       padding-top: 1rem;
       text-decoration: none; }
 
+/*----------END INDEX - MARKETING----------*/
 /*----------INDEX - HIGHLIGHTS----------*/
 .products__section {
   margin: 10rem 0;
@@ -358,6 +359,7 @@ a {
 .h3 {
   font-size: 3rem; }
 
+/*----------END INDEX - HIGHLIGHTS----------*/
 /*----------NDEX - GALMA DECO----------*/
 .sectionGalma {
   margin-bottom: 10rem; }
@@ -391,13 +393,15 @@ a {
     height: 20rem;
     border-radius: 10px; }
 
+/*----------END NDEX - GALMA DECO----------*/
 /*----------MEDIA QUERIES----------*/
 @media (max-width: 1260px) {
+  /*----------HEADER STYLES----------*/
   .header__content {
     justify-content: center; }
-  .header a {
-    margin: auto; }
-  /*----------GALMA----------*/
+    .header__content a {
+      margin: auto; }
+  /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products {
     grid-template-columns: repeat(2, 1fr); }
     .sectionGalma__products img {
@@ -432,12 +436,11 @@ a {
     justify-content: start;
     margin-top: 2rem; }
     .content__navbar li {
-      font-size: 2rem;
-      margin-top: 2rem; }
-  .nav-item {
-    padding: 2rem; }
+      font-size: 3rem;
+      margin-top: 2rem;
+      padding: 3rem; }
   /*----------INDEX-MARKETING----------*/
-  .marketing_item {
+  .marketing__cards--item {
     margin-bottom: 5rem; }
   /*----------FOOTER----------*/
   .footer {
@@ -445,7 +448,7 @@ a {
     flex-direction: column; }
   .logoFooter {
     margin-left: auto; }
-  /*----------PRODUCTS PAGE CARDS----------*/
+  /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products {
     grid-template-columns: repeat(2, 1fr); }
     .sectionGalma__products img {
@@ -480,11 +483,11 @@ a {
     height: auto; } }
 
 @media (max-width: 768px) {
-  /*----------GALMA----------*/
+  /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products img {
     width: 20rem;
     height: 20rem; }
-  /*----------HIGHLIGHTS CARDS----------*/
+  /*----------INDEX HIGHLIGHTS CARDS----------*/
   .card.mb-3 {
     max-width: 80%; }
   /*----------ABOUT US PAGE MEDIA----------*/
@@ -507,7 +510,7 @@ a {
   /*----------PRODUCTS PAGE CARDS----------*/
   .products__img {
     width: 34rem; }
-  /*----------GALMA SECTION----------*/
+  /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products {
     grid-template-columns: repeat(2, 1fr); }
     .sectionGalma__products img {
@@ -526,9 +529,7 @@ a {
   /*----------CONTACT PAGE MEDIA----------*/
   .contact__grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-self: center;
-    justify-items: center; } }
+    grid-template-columns: repeat(1, 1fr); } }
 
 @media (max-width: 480px) {
   /*----------PRODUCTS PAGE CARDS----------*/
@@ -537,9 +538,10 @@ a {
     height: 15rem; } }
 
 @media (max-width: 380px) {
+  /*---------PRODUCTS CARD----------*/
   .products__img {
     width: 25rem; }
-  /*----------GALMA----------*/
+  /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products img {
     width: 15rem;
     height: 15rem; } }

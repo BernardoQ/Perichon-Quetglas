@@ -18,7 +18,7 @@
 
       .marketing__cards--item{
         h3{
-          margin-top: 3rem;
+          margin-top: 1rem;
           font-size: $h3;
         }
     
@@ -38,6 +38,7 @@
       }
     }
 }
+/*----------END INDEX - MARKETING----------*/
  
   
 /*----------INDEX - HIGHLIGHTS----------*/
@@ -63,6 +64,8 @@
 .h3{
   font-size: $h3;
 }
+/*----------END INDEX - HIGHLIGHTS----------*/
+
   
 /*----------NDEX - GALMA DECO----------*/
 .sectionGalma{
@@ -106,21 +109,23 @@
       border-radius: 10px;
     }
 }
-
+/*----------END NDEX - GALMA DECO----------*/
 
 
 
 /*----------MEDIA QUERIES----------*/
 @media (max-width: 1260px){
+
+  /*----------HEADER STYLES----------*/
   .header__content{
     justify-content: center;
+
+    a{
+      margin:auto
+    }
   }
 
-  .header a{
-    margin:auto
-  }
-
- /*----------GALMA----------*/
+ /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products{
     grid-template-columns: repeat(2,1fr);
 
@@ -141,7 +146,7 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 5rem;
     row-gap: 2rem;
-  }  
+  } 
   
   /*----------ABOUT US PAGE MEDIA----------*/
   .video{
@@ -166,17 +171,15 @@
     margin-top: 2rem;
 
       li{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: 2rem;
+        padding: 3rem;        
       }
-  }
-    
-  .nav-item{
-  padding: 2rem;
-  }
+  }   
+
 
   /*----------INDEX-MARKETING----------*/
-  .marketing_item{
+  .marketing__cards--item{
     margin-bottom: 5rem;
   }
 
@@ -190,8 +193,7 @@
     margin-left: auto;
   }
 
-  /*----------PRODUCTS PAGE CARDS----------*/
-
+  /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products{
     grid-template-columns: repeat(2,1fr);
 
@@ -242,13 +244,13 @@
 }
 
 @media (max-width: 768px){ 
-  /*----------GALMA----------*/
+  /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products img{
     width: map-get($galmaImg, md);       
     height: map-get($galmaImg, md);     
   }
   
-  /*----------HIGHLIGHTS CARDS----------*/ 
+  /*----------INDEX HIGHLIGHTS CARDS----------*/ 
   .card.mb-3{
     max-width: 80%;
   }
@@ -281,7 +283,7 @@
     width: 34rem;
   }
 
-  /*----------GALMA SECTION----------*/
+  /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products{
     grid-template-columns: repeat(2,1fr);
 
@@ -309,8 +311,6 @@
   .contact__grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    justify-self: center;
-    justify-items: center;
   }
 }
 
@@ -327,11 +327,12 @@
 
 @media (max-width: 380px){
  
+  /*---------PRODUCTS CARD----------*/
   .products__img{
     width: 25rem;
   }
 
-  /*----------GALMA----------*/  
+  /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products{
     img{
       width: map-get($galmaImg, xs);       
