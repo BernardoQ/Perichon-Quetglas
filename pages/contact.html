@@ -8,6 +8,8 @@
     <meta name="keywords"  content="perichon, limpieza, fabricantes, textiles, artículos, productos, hogar, trapo, piso, franela, paño, rejilla">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <!-- JS ALERT LIBRARY -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- MY CSS -->
     <link rel="stylesheet" href="../css/style.css">  
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"> 
@@ -61,11 +63,7 @@
             Contactanos 
         </h2>
         <div class="contact__grid">
-<<<<<<< HEAD
-            <form id="form" class="contact__form">
-=======
             <form class="contact__form" action="https://formsubmit.co/a4445ce9a15f1235e8ddae671c6c47f6" method="POST">
->>>>>>> 32a5e258be3bc29ab1626326e4b1bc2185241fa6
                 <ul class="form__grid">
                     <li id="name" class="form--item">
                         <div>
@@ -113,7 +111,7 @@
                     </li>
 
                     <li id="sendButton" class="form--item">                
-                        <button class="button btn">
+                        <button class="button btn" onclick="mostrar()">
                             <input type="submit" value="Enviar" id="submitBtn" class="btn--input">
                         </button>
                     </li>
@@ -166,6 +164,17 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
 
+    <!--SUBMIT BTN JS -->
+    <script type="text/javascript">
+        function mostrar(){
+            swal({
+                title: "Gracias por contactarnos!",
+                text: "Te estaremos respondiendo a la brevedad!",
+                icon: "success",
+                button: "Volver!",
+                });
+        }
+    </script>
 
 </body>
 </html>
