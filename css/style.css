@@ -18,7 +18,8 @@ html {
   line-height: 0; }
 
 ul {
-  list-style: none !important; }
+  list-style: none !important;
+  padding: 0 !important; }
 
 a {
   text-decoration: none !important; }
@@ -59,11 +60,11 @@ a {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4); }
 
 /*----------LOGO HEADER-FOOTER----------*/
-.logoFooter {
+.logoHeader {
   width: 25rem;
   height: auto;
-  margin-top: 1rem; }
-  .logoFooter:hover {
+  margin-left: 7rem; }
+  .logoHeader:hover {
     animation: bounce 1s; }
 
 @keyframes bounce {
@@ -115,38 +116,61 @@ a {
 
 /*----------END NAV BAR STYLE----------*/
 /*----------FOOTER STYLE----------*/
-.container footer {
-  width: 100%;
-  line-height: 0; }
-
 .footer {
-  background-color: #E33532;
-  justify-content: space-around;
-  margin-bottom: 0 !important; }
+  width: 100%; }
+  .footer .footer__content {
+    display: flex;
+    align-items: center;
+    background-color: #E33532;
+    justify-content: space-around;
+    margin-bottom: 0 !important; }
+    .footer .footer__content .logoFooter {
+      width: 25rem;
+      height: auto; }
+    .footer .footer__content .quickMenu__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 2rem 0 5rem 0;
+      text-align: center; }
+      .footer .footer__content .quickMenu__content .quickMenu__item {
+        transition: transform 0.3s; }
+        .footer .footer__content .quickMenu__content .quickMenu__item:hover {
+          transform: scale(1.2);
+          transition: ease-out 0.2s; }
+        .footer .footer__content .quickMenu__content .quickMenu__item a {
+          color: #292929;
+          font-size: 1.5rem;
+          font-weight: 600; }
+          .footer .footer__content .quickMenu__content .quickMenu__item a:hover {
+            transform: scale(5.2);
+            transition: ease-out 0.2s;
+            color: #DEC513; }
+    .footer .footer__content .footer__socialMedia {
+      display: flex; }
+      .footer .footer__content .footer__socialMedia .socialMedia__item-content {
+        width: 6rem;
+        height: 6rem;
+        background-color: #E33532;
+        text-align: center;
+        line-height: 6rem;
+        margin: 0 10px;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; }
+        .footer .footer__content .footer__socialMedia .socialMedia__item-content .a__img {
+          width: 3rem;
+          height: 3rem;
+          position: relative;
+          transition: .5s;
+          z-index: 3; }
 
-.footer__ul {
-  width: 8rem;
-  height: 8rem;
-  background-color: #E33532;
-  text-align: center;
-  line-height: 8rem;
-  margin: 0 10px;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  z-index: 1; }
-  .footer__ul .a__img {
-    width: 3.5rem;
-    height: 3.5rem;
-    position: relative;
-    transition: .5s;
-    z-index: 3; }
-
-.footer__ul:hover img {
+.socialMedia__item-content:hover img {
   transform: rotateY(360deg); }
 
-.footer__ul:before {
+.socialMedia__item-content:before {
   content: "";
   position: absolute;
   top: 100%;
@@ -156,36 +180,17 @@ a {
   transition: .5s;
   z-index: 2; }
 
-.footer__ul:hover:before {
+.socialMedia__item-content:hover:before {
   top: 0; }
 
-.nav li:nth-child(1) a:before {
+.footer__socialMedia li:nth-child(1) a:before {
   background: #DEC513; }
 
-.nav li:nth-child(2) a:before {
+.footer__socialMedia li:nth-child(2) a:before {
   background: #DEC513; }
 
-.nav li:nth-child(3) a:before {
+.footer__socialMedia li:nth-child(3) a:before {
   background: #DEC513; }
-
-.footer__quickMenu {
-  align-content: center;
-  padding: 0;
-  margin-top: 2rem;
-  text-align: center; }
-  .footer__quickMenu .quickMenu__item {
-    transition: transform 0.3s; }
-    .footer__quickMenu .quickMenu__item:hover {
-      transform: scale(1.2);
-      transition: ease-out 0.2s; }
-    .footer__quickMenu .quickMenu__item a {
-      color: #292929;
-      font-size: 1.5rem;
-      font-weight: 600; }
-      .footer__quickMenu .quickMenu__item a:hover {
-        transform: scale(5.2);
-        transition: ease-out 0.2s;
-        color: #DEC513; }
 
 .footer__rights {
   justify-content: center;
