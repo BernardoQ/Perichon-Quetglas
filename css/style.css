@@ -14,10 +14,11 @@
   font-family: 'Roboto', sans-serif; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  line-height: 0; }
 
 ul {
-  list-style: none; }
+  list-style: none !important; }
 
 a {
   text-decoration: none !important; }
@@ -61,7 +62,6 @@ a {
 .logoFooter {
   width: 25rem;
   height: auto;
-  margin-left: 10rem;
   margin-top: 1rem; }
   .logoFooter:hover {
     animation: bounce 1s; }
@@ -103,7 +103,8 @@ a {
       transition: ease-out 0.2s; }
     .content__navbar li a {
       color: #292929;
-      transition: transform 0.3s; }
+      font-size: 1.5rem;
+      font-weight: 600; }
       .content__navbar li a:hover {
         transform: scale(5.2);
         transition: ease-out 0.2s;
@@ -112,13 +113,16 @@ a {
 #navbarNav {
   flex-direction: row-reverse; }
 
+/*----------END NAV BAR STYLE----------*/
 /*----------FOOTER STYLE----------*/
 .container footer {
-  width: 100%; }
+  width: 100%;
+  line-height: 0; }
 
 .footer {
   background-color: #E33532;
-  justify-content: space-between; }
+  justify-content: space-around;
+  margin-bottom: 0 !important; }
 
 .footer__ul {
   width: 8rem;
@@ -132,13 +136,12 @@ a {
   position: relative;
   overflow: hidden;
   z-index: 1; }
-
-.a__img {
-  width: 3.5rem;
-  height: 3.5rem;
-  position: relative;
-  transition: .5s;
-  z-index: 3; }
+  .footer__ul .a__img {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    transition: .5s;
+    z-index: 3; }
 
 .footer__ul:hover img {
   transform: rotateY(360deg); }
@@ -164,6 +167,35 @@ a {
 
 .nav li:nth-child(3) a:before {
   background: #DEC513; }
+
+.footer__quickMenu {
+  align-content: center;
+  padding: 0;
+  margin-top: 2rem;
+  text-align: center; }
+  .footer__quickMenu .quickMenu__item {
+    transition: transform 0.3s; }
+    .footer__quickMenu .quickMenu__item:hover {
+      transform: scale(1.2);
+      transition: ease-out 0.2s; }
+    .footer__quickMenu .quickMenu__item a {
+      color: #292929;
+      font-size: 1.5rem;
+      font-weight: 600; }
+      .footer__quickMenu .quickMenu__item a:hover {
+        transform: scale(5.2);
+        transition: ease-out 0.2s;
+        color: #DEC513; }
+
+.footer__rights {
+  justify-content: center;
+  background-color: #E33532; }
+  .footer__rights .rights__text {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600; }
 
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;

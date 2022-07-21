@@ -4,6 +4,7 @@ $h3: 3rem;
 $brandRed:#E33532;
 $brandYellow: #DEC513;
 $cardShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+$menuFontcolor: #292929;
 
 %sectionTitle{
     margin-top: 5rem;
@@ -15,9 +16,32 @@ $cardShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-shadow: 1px 2px 2px rgba(0,0,0,0.4);
 }
 
+@mixin brandLogo{
+  width: 25rem;
+  height: auto;
+  margin-top: 1rem;
+}
+
 @mixin card-text{
     font-size: 2rem;
     text-align: left;
+}
+
+@mixin menuItemHover{
+  transform: scale(1.2);    
+  transition: ease-out 0.2s;
+}
+
+@mixin menuAhover{
+  transform: scale(5.2);    
+  transition: ease-out 0.2s;
+  color: $brandYellow;
+}
+
+@mixin menuAstyle{
+  color: $menuFontcolor;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 $galmaImg: (
