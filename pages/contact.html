@@ -70,7 +70,7 @@
                             <label class="form--label">Nombre</label>
                         </div>
                         <div>
-                            <input type="text" name="name" class="form--text" required>
+                            <input type="text" id="name" name="name" class="form--text" required>
                         </div>
                     </li>
 
@@ -79,7 +79,7 @@
                             <label class="form--label">Apellido</label>
                         </div>
                         <div>  
-                            <input type="text" name="Last Name" class="form--text" required>
+                            <input type="text" id="lastName" name="Last Name" class="form--text" required>
                         </div>
                     </li>
 
@@ -88,7 +88,7 @@
                             <label class="form--label">Correo electrónico</label>
                         </div>
                         <div>
-                            <input type="text" name="e-mail" class="form--text" required>
+                            <input type="text" id="email" name="e-mail" class="form--text" required>
                         </div>
                     </li>
 
@@ -97,7 +97,7 @@
                             <label class="form--label">Asunto</label>
                         </div>
                         <div>
-                            <input type="text" name="Subject" class="form--text" required>
+                            <input type="text" id="subject" name="Subject" class="form--text" required>
                         </div>
                     </li>
 
@@ -106,7 +106,7 @@
                             <label class="form--label">Deja tu mensaje</label>
                         </div>
                         <div>
-                            <textarea class="form--text" name="Message" required></textarea>
+                            <textarea class="form--text" id="message" name="Message" required></textarea>
                         </div>
                     </li>
 
@@ -118,7 +118,8 @@
 
                     <li>
                         <input type="hidden" name="_next" value="https://bernardoq.github.io/Perichon-Quetglas/pages/contact.html">
-                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_captcha" value="false">  
+                        <input type="hidden" name="_template" value="box">                      
                     </li>
                </ul>
             </form>
@@ -126,7 +127,6 @@
             <div>
                 <img src="../img/Contact img/perro.jpg" class="form__img" alt="decorative dog image">
             </div>
-
         </div>
     </section>      
 
@@ -158,23 +158,12 @@
         </footer>
     </div>
 
-
     <!--BOOTSTRAP JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
 
     <!--SUBMIT BTN JS -->
-    <script type="text/javascript">
-        function mostrar(){
-            swal({
-                title: "Gracias por contactarnos!",
-                text: "Te estaremos respondiendo a la brevedad!",
-                icon: "success",
-                button: false,
-                });
-        }
-    </script>
-
+    <script type="text/javascript" src="./javascipt.js"></script>
 </body>
 </html>
