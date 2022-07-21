@@ -175,20 +175,9 @@
       }
   }   
 
-
   /*----------INDEX-MARKETING----------*/
   .marketing__cards--item{
     margin-bottom: 5rem;
-  }
-
-  /*----------FOOTER----------*/
-  .footer{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logoFooter{
-    margin-left: auto;
   }
 
   /*----------NDEX - GALMA DECO----------*/
@@ -279,6 +268,11 @@
     align-self: center;
   } 
 
+  /*----------FOOTER----------*/ 
+  .footer__content{
+    display: grid;
+  }
+
 }
 
 @media (max-width: 576px){
@@ -328,12 +322,18 @@
     }
   }
 
-  /*---------PRODUCTS CARD----------*/
- 
+  /*---------CONTACT FORM----------*/
+  .contact__form{
+    width: fit-content;
+  } 
 }
 
-@media (max-width: 380px){
- 
+@media (max-width: 380px){ 
+  /*---------SECTION TITLE GLOBAL STYLE----------*/
+  .section__title{
+    font-size: 4rem;
+  }
+
   /*---------PRODUCTS CARD----------*/
   .products__img{
     width: 25rem;
@@ -346,6 +346,15 @@
       height: map-get($galmaImg, xs);  
     }
   }  
+
+    /*---------CONTACT FORM----------*/
+    .contact__form{
+      width: 90vw;
+
+        #message{
+          width: 20rem;
+        }
+    } 
 }
 
 

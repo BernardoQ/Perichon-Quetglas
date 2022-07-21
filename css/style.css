@@ -19,7 +19,8 @@ html {
 
 ul {
   list-style: none !important;
-  padding: 0 !important; }
+  margin: 0;
+  padding: 0; }
 
 a {
   text-decoration: none !important; }
@@ -290,12 +291,13 @@ a {
     width: 40rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 9.5rem;
+    padding-bottom: 5.5rem;
     margin-bottom: -2.5rem; }
 
 #sendButton {
   grid-area: sendButton;
-  width: 100%; }
+  width: 100%;
+  margin-top: 2.5rem; }
 
 .form__grid {
   display: grid;
@@ -304,7 +306,7 @@ a {
   grid-template-areas: "name lastName" "email subject" "message message" "message message" "sendButton sendButton"; }
 
 .form--item {
-  margin: 2rem auto 0.5rem auto;
+  margin: 1rem auto 0.5rem auto;
   justify-content: center;
   text-align: center;
   padding: auto; }
@@ -501,12 +503,6 @@ a {
   /*----------INDEX-MARKETING----------*/
   .marketing__cards--item {
     margin-bottom: 5rem; }
-  /*----------FOOTER----------*/
-  .footer {
-    display: flex;
-    flex-direction: column; }
-  .logoFooter {
-    margin-left: auto; }
   /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products {
     grid-template-columns: repeat(2, 1fr); }
@@ -566,7 +562,10 @@ a {
     justify-items: center; }
   .card-body {
     padding: 0;
-    align-self: center; } }
+    align-self: center; }
+  /*----------FOOTER----------*/
+  .footer__content {
+    display: grid; } }
 
 @media (max-width: 576px) {
   /*----------PRODUCTS PAGE CARDS----------*/
@@ -598,13 +597,23 @@ a {
   .sectionGalma__products img {
     width: 15rem;
     height: 15rem; }
-  /*---------PRODUCTS CARD----------*/ }
+  /*---------CONTACT FORM----------*/
+  .contact__form {
+    width: fit-content; } }
 
 @media (max-width: 380px) {
+  /*---------SECTION TITLE GLOBAL STYLE----------*/
+  .section__title {
+    font-size: 4rem; }
   /*---------PRODUCTS CARD----------*/
   .products__img {
     width: 25rem; }
   /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products img {
     width: 15rem;
-    height: 15rem; } }
+    height: 15rem; }
+  /*---------CONTACT FORM----------*/
+  .contact__form {
+    width: 90vw; }
+    .contact__form #message {
+      width: 20rem; } }
