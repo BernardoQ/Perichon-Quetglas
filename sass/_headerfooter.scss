@@ -87,6 +87,10 @@
 
     .logoFooter{
       @include brandLogo;
+
+      &:hover{
+        animation: bounce 1s;
+      }    
     }
     
     .quickMenu__content{

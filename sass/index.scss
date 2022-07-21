@@ -16,6 +16,10 @@
     .marketing__cards{
       text-align: center;
 
+      .row{
+        height: max-content;
+      }
+
       .marketing__cards--item{
         h3{
           margin-top: 1rem;
@@ -23,8 +27,8 @@
         }
     
         img{
-          width: 30rem;
-          height: 30rem;        
+          width: 25rem;
+          height: 25rem;        
         }
         
         a{
@@ -34,6 +38,8 @@
         .btn{
           padding-top: 1rem;
           text-decoration: none;
+          height: 5rem;
+          width: 10rem;
         }
       }
     }
@@ -270,9 +276,8 @@
 
   /*----------FOOTER----------*/ 
   .footer__content{
-    display: grid;
+    display: grid !important;
   }
-
 }
 
 @media (max-width: 576px){
@@ -347,14 +352,14 @@
     }
   }  
 
-    /*---------CONTACT FORM----------*/
-    .contact__form{
-      width: 90vw;
+  /*---------CONTACT FORM----------*/
+  .contact__form{
+    width: 90vw;
 
-        #message{
-          width: 20rem;
-        }
-    } 
+      #message{
+        width: 20rem;
+      }
+  }  
 }
 
 
