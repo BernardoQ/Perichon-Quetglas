@@ -6,3 +6,5 @@ function mostrar(){
         button: false,
         });
 }
+
+console.log("hola mundo")
