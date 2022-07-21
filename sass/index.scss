@@ -273,6 +273,12 @@
     justify-self: center;
     justify-items: center;
   }
+
+  .card-body{
+    padding: 0;
+    align-self: center;
+  } 
+
 }
 
 @media (max-width: 576px){
@@ -314,13 +320,16 @@
 
 @media (max-width: 480px){
 
-  /*----------PRODUCTS PAGE CARDS----------*/
+  /*----------GALMA----------*/
   .sectionGalma__products{
     img{
       width: map-get($galmaImg, xs);       
       height: map-get($galmaImg, xs);   
     }
   }
+
+  /*---------PRODUCTS CARD----------*/
+ 
 }
 
 @media (max-width: 380px){

@@ -499,7 +499,10 @@ a {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-self: center;
-    justify-items: center; } }
+    justify-items: center; }
+  .card-body {
+    padding: 0;
+    align-self: center; } }
 
 @media (max-width: 576px) {
   /*----------PRODUCTS PAGE CARDS----------*/
@@ -527,10 +530,11 @@ a {
     grid-template-columns: repeat(1, 1fr); } }
 
 @media (max-width: 480px) {
-  /*----------PRODUCTS PAGE CARDS----------*/
+  /*----------GALMA----------*/
   .sectionGalma__products img {
     width: 15rem;
-    height: 15rem; } }
+    height: 15rem; }
+  /*---------PRODUCTS CARD----------*/ }
 
 @media (max-width: 380px) {
   /*---------PRODUCTS CARD----------*/
