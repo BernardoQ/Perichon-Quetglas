@@ -1,13 +1,17 @@
 @import 'variables';
 /*----------CONTACT PAGE STYLE----------*/
-.contact .section__title{
-   @extend %sectionTitle;
+.contact{    
+    margin-bottom: $sectionMargin;
+
+    .section__title{
+        @extend %sectionTitle;
+     }
 }
+
 
 .contact__grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 10rem;
 }
 
 .contact__form{
