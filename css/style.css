@@ -571,16 +571,21 @@ a {
     justify-items: center; }
   .form__img {
     width: 80vw;
-    height: auto; } }
+    height: auto; }
+  /*----------CONTACT PAGE MEDIA----------*/
+  .footer__logo {
+    padding-top: 3rem; } }
 
 @media (max-width: 768px) {
-  /*----------NDEX - GALMA DECO----------*/
+  /*----------INDEX - GALMA DECO----------*/
   .sectionGalma__products img {
     width: 20rem;
     height: 20rem; }
   /*----------INDEX HIGHLIGHTS CARDS----------*/
   .card.mb-3 {
     max-width: 80%; }
+  .card-text {
+    padding-left: 1.5rem; }
   /*----------ABOUT US PAGE MEDIA----------*/
   .sectionAboutUs {
     text-align: -webkit-center; }
