@@ -524,6 +524,8 @@ a {
 
 @media (max-width: 992px) {
   /*----------HEADER----------*/
+  .logoHeader {
+    margin-left: auto; }
   .content__navbar {
     flex-direction: column;
     padding: 1rem;
