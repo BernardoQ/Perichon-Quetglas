@@ -147,7 +147,8 @@ a {
         .footer .footer__content .quickMenu__content .quickMenu__item a {
           color: #292929;
           font-size: 1.5rem;
-          font-weight: 600; }
+          font-weight: 600;
+          color: black; }
           .footer .footer__content .quickMenu__content .quickMenu__item a:hover {
             transform: scale(5.2);
             transition: ease-out 0.2s;
@@ -598,7 +599,9 @@ a {
     align-self: center; }
   /*----------FOOTER----------*/
   .footer__content {
-    display: grid !important; } }
+    display: grid !important; }
+  .goUp {
+    display: none; } }
 
 @media (max-width: 576px) {
   /*----------PRODUCTS PAGE CARDS----------*/

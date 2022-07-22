@@ -278,6 +278,10 @@
   .footer__content{
     display: grid !important;
   }
+
+  .goUp{
+    display: none;
+  }
 }
 
 @media (max-width: 576px){

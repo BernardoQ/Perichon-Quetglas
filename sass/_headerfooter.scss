@@ -106,13 +106,14 @@
     
         .quickMenu__item{    
           transition: transform 0.3s;
-    
+         
           &:hover{
             @include menuItemHover;
           }
     
             a{          
              @include menuAstyle;
+             color: black;
     
               &:hover{
                 @include menuAhover;
