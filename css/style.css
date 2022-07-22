@@ -124,10 +124,13 @@ a {
     align-items: center;
     background-color: #E33532;
     justify-content: space-around;
+    margin: auto;
     margin-bottom: 0 !important; }
     .footer .footer__content .logoFooter {
       width: 25rem;
-      height: auto; }
+      height: auto;
+      padding-bottom: 6rem;
+      border-radius: 25px; }
       .footer .footer__content .logoFooter:hover {
         animation: bounce 1s; }
     .footer .footer__content .quickMenu__content {
@@ -151,6 +154,8 @@ a {
             color: #DEC513; }
     .footer .footer__content .footer__socialMedia {
       display: flex; }
+      .footer .footer__content .footer__socialMedia .socialMedia__item {
+        padding: 0 0.5rem 6rem 0.5rem; }
       .footer .footer__content .footer__socialMedia .socialMedia__item-content {
         width: 6rem;
         height: 6rem;
@@ -196,18 +201,28 @@ a {
   background: #DEC513; }
 
 .footer__rights {
+  display: flex;
+  background-color: #E33532;
   justify-content: center;
-  background-color: #E33532; }
+  padding-top: 6rem;
+  margin: auto; }
   .footer__rights .rights__text {
+    justify-self: center;
     text-align: center;
-    margin-bottom: 0;
     font-size: 1.3rem;
     color: black;
     font-weight: 600; }
-  .footer__rights .material-icons {
-    display: flex;
-    justify-content: right;
-    font-size: 24px; }
+
+.goUp {
+  display: flex;
+  justify-content: right;
+  background-color: #E33532; }
+  .goUp a {
+    color: black; }
+  .goUp .material-icons {
+    font-size: 24px;
+    margin-right: 2rem;
+    margin-bottom: 2rem; }
 
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
@@ -314,7 +329,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "name lastName" "email subject" "message message" "message message" "sendButton sendButton"; }
+  grid-template-areas: "name lastName" "email subject" "message message" "message message" "sendButton sendButton"; }
 
 .form--item {
   margin: 1rem auto 0.5rem auto;

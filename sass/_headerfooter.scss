@@ -80,13 +80,17 @@
   
   .footer__content{
     display: flex;
-    align-items: center;
+    align-items:center;
     background-color: $brandRed;
     justify-content: space-around;
+    margin: auto;
     margin-bottom: 0 !important;  
+
 
     .logoFooter{
       @include brandLogo;
+      padding-bottom: 6rem;
+      border-radius: 25px;
 
       &:hover{
         animation: bounce 1s;
@@ -120,6 +124,10 @@
 
     .footer__socialMedia{
       display: flex;
+
+      .socialMedia__item{
+        padding: 0 0.5rem 6rem 0.5rem;
+      }
 
       .socialMedia__item-content{
         width: 6rem;
@@ -179,22 +187,34 @@
 
 
 .footer__rights{
-  justify-content: center;
+  display: flex;
   background-color: $brandRed;
+  justify-content: center;
+  padding-top: 6rem;
+  margin: auto;
 
     .rights__text{
+      justify-self: center;
       text-align: center;
-      margin-bottom: 0;
       font-size: 1.3rem;
       color: black;
       font-weight: 600;
     }
-    
-    .material-icons{
-      display: flex;
-      justify-content: right;
-      font-size: 24px;
-    }
-
-
 }
+
+.goUp{
+  display: flex;
+  justify-content: right;
+  background-color: $brandRed;
+
+  a{
+    color:black
+   }
+  
+  .material-icons{
+    font-size: 24px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
