@@ -104,7 +104,7 @@ a {
       transform: scale(1.2);
       transition: ease-out 0.2s; }
     .content__navbar li a {
-      color: #292929;
+      color: black;
       font-size: 1.5rem;
       font-weight: 600; }
       .content__navbar li a:hover {
@@ -145,7 +145,7 @@ a {
           transform: scale(1.2);
           transition: ease-out 0.2s; }
         .footer .footer__content .quickMenu__content .quickMenu__item a {
-          color: #292929;
+          color: black;
           font-size: 1.5rem;
           font-weight: 600;
           color: black; }
