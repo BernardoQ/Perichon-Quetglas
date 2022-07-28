@@ -6,6 +6,7 @@
 @import './pageStyle/contact';
 @import './pageStyle/findus';
 
+
   
   
 /*----------INDEX - MARKETING----------*/
@@ -117,8 +118,6 @@
 }
 /*----------END NDEX - GALMA DECO----------*/
 
-
-
 /*----------MEDIA QUERIES----------*/
 @media (max-width: 1260px){
 
@@ -145,7 +144,7 @@
 
   /*----------PRODUCTS PAGE CARDS----------*/
   .products__img{
-    width: 36rem;
+    width: map-get($poductWidhtImg, lg) !important;
   }
 
   /*----------FIND US PAGE MEDIA----------*/
@@ -200,14 +199,14 @@
   }
 
   /*----------PRODUCTS PAGE CARDS----------*/
-  .products__img{
-    width: 36rem;
+  .card .products__img{
+    width: map-get($poductWidhtImg, md) !important;
   }
 
   /*----------FIND US PAGE MEDIA----------*/
   .findUs__grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
     margin: 5rem auto auto auto;
     column-gap: 3rem;
     row-gap: 3rem;
@@ -260,18 +259,9 @@
     padding-left: 1.5rem;
   }
 
-
   /*----------ABOUT US PAGE MEDIA----------*/
   .sectionAboutUs{
     text-align: -webkit-center;
-  }
-
-  /*----------FIND US PAGE MEDIA----------*/
-  .findUs__grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5rem;
-    row-gap: 3rem;
   }
 
   /*----------CONTACT PAGE MEDIA----------*/
@@ -320,7 +310,7 @@
   /*----------FIND US PAGE MEDIA----------*/
   .findUs__grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
     margin: 5rem auto auto auto;
     column-gap: 4rem;
     row-gap: 3rem;
@@ -348,6 +338,11 @@
     }
   }
 
+    /*----------PRODUCTS PAGE CARDS----------*/
+    .products__img{
+      width: map-get($poductWidhtImg, sm) !important;
+    }
+
   /*---------CONTACT FORM----------*/
   .contact__form{
     width: fit-content;
@@ -362,7 +357,7 @@
 
   /*---------PRODUCTS CARD----------*/
   .products__img{
-    width: 25rem;
+    width: map-get($poductWidhtImg, xs) !important;
   }
 
   /*----------NDEX - GALMA DECO----------*/

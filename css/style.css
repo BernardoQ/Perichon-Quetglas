@@ -248,12 +248,18 @@ a {
   .section__products .card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
-    height: 55rem; }
+    height: 55rem;
+    width: auto;
+    padding: auto; }
+    .section__products .card .card-body {
+      display: flex;
+      justify-content: center;
+      margin: auto; }
     .section__products .card .card-text {
       font-size: 1.5rem; }
     .section__products .card .products__img {
-      width: 38rem;
-      height: 30rem;
+      width: 37rem;
+      height: 29rem;
       border-radius: 15px;
       margin: 1rem auto; }
     .section__products .card .products__caract li {
@@ -338,7 +344,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "name lastName" "email subject" "message message" "message message" "sendButton sendButton"; }
+  grid-template-areas: "name lastName" "email subject" "message message" "message message" "sendButton sendButton"; }
 
 .form--item {
   margin: 1rem auto 0.5rem auto;
@@ -513,7 +519,7 @@ a {
       height: 30rem; }
   /*----------PRODUCTS PAGE CARDS----------*/
   .products__img {
-    width: 36rem; }
+    width: 36rem !important; }
   /*----------FIND US PAGE MEDIA----------*/
   .findUs__grid {
     display: grid;
@@ -551,12 +557,12 @@ a {
       width: 25rem;
       height: 25rem; }
   /*----------PRODUCTS PAGE CARDS----------*/
-  .products__img {
-    width: 36rem; }
+  .card .products__img {
+    width: 34rem !important; }
   /*----------FIND US PAGE MEDIA----------*/
   .findUs__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
     margin: 5rem auto auto auto;
     column-gap: 3rem;
     row-gap: 3rem; }
@@ -594,12 +600,6 @@ a {
   /*----------ABOUT US PAGE MEDIA----------*/
   .sectionAboutUs {
     text-align: -webkit-center; }
-  /*----------FIND US PAGE MEDIA----------*/
-  .findUs__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5rem;
-    row-gap: 3rem; }
   /*----------CONTACT PAGE MEDIA----------*/
   .contact__grid {
     display: grid;
@@ -630,7 +630,7 @@ a {
   /*----------FIND US PAGE MEDIA----------*/
   .findUs__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
     margin: 5rem auto auto auto;
     column-gap: 4rem;
     row-gap: 3rem; }
@@ -647,6 +647,9 @@ a {
   .sectionGalma__products img {
     width: 15rem;
     height: 15rem; }
+  /*----------PRODUCTS PAGE CARDS----------*/
+  .products__img {
+    width: 33rem !important; }
   /*---------CONTACT FORM----------*/
   .contact__form {
     width: fit-content; } }
@@ -657,7 +660,7 @@ a {
     font-size: 4rem; }
   /*---------PRODUCTS CARD----------*/
   .products__img {
-    width: 25rem; }
+    width: 30rem !important; }
   /*----------NDEX - GALMA DECO----------*/
   .sectionGalma__products img {
     width: 15rem;
