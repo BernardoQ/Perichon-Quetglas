@@ -7,7 +7,11 @@
     .card{
       box-shadow: $cardShadow;
       border-radius: 15px;
-      height: 62rem;
+      height: 55rem;
+
+      .card-text{
+        font-size: 1.5rem;
+      }
 
       .products__img{
         width:38rem;

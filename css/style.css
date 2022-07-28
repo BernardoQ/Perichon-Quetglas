@@ -248,7 +248,9 @@ a {
   .section__products .card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
-    height: 62rem; }
+    height: 55rem; }
+    .section__products .card .card-text {
+      font-size: 1.5rem; }
     .section__products .card .products__img {
       width: 38rem;
       height: 30rem;
