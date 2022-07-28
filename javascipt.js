@@ -1,3 +1,5 @@
+
+
 function mostrar(){
     swal({
         title: "Gracias por contactarnos!",
@@ -6,7 +8,5 @@ function mostrar(){
         button: false,
         });
 }
-
-console.log("hola mundo")
 
 
