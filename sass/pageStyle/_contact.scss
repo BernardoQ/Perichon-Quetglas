@@ -1,4 +1,5 @@
 @import 'variables';
+
 /*----------CONTACT PAGE STYLE----------*/
 .contact{    
     margin-bottom: $sectionMargin;
@@ -7,7 +8,6 @@
         @extend %sectionTitle;
      }
 }
-
 
 .contact__grid{
     display: grid;

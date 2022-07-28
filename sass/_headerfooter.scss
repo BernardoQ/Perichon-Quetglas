@@ -103,9 +103,16 @@
       justify-content: space-around;
       margin: 2rem 0 5rem 0;
       text-align: center;
+      padding-right: 7rem;
+
+        .quickMenu__title h4{
+          font-size: 2.5rem;
+          font-weight: bolder;
+          color: black;
+      }
     
         .quickMenu__item{    
-          transition: transform 0.3s;
+          transition: transform 0.3s;       
          
           &:hover{
             @include menuItemHover;
@@ -125,17 +132,18 @@
 
     .footer__socialMedia{
       display: flex;
+      justify-content: center;
 
       .socialMedia__item{
-        padding: 0 0.5rem 6rem 0.5rem;
+        padding: 0 0.5rem 5rem 0.5rem;
       }
 
       .socialMedia__item-content{
-        width: 6rem;
-        height: 6rem;
+        width: 4rem;
+        height: 4rem;
         background-color: $brandRed;
         text-align: center;
-        line-height: 6rem;
+        line-height: 4rem;
         margin: 0 10px;
         display: block;
         border-radius: 50%;
@@ -188,10 +196,11 @@
 
 
 .footer__rights{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: $brandRed;
   justify-content: center;
-  padding-top: 6rem;
+  padding-top: 5rem;
   margin: auto;
 
     .rights__text{
@@ -200,22 +209,28 @@
       font-size: 1.3rem;
       color: black;
       font-weight: 600;
+
+        a{
+          color: black;
+        }
+    }
+
+    .goUp{
+      display: flex;
+      justify-content: right;
+      background-color: $brandRed;
+    
+      a{
+        color:$menuFontcolor;
+       }
+      
+      .material-icons{
+        font-size: 24px;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+      }
     }
 }
 
-.goUp{
-  display: flex;
-  justify-content: right;
-  background-color: $brandRed;
 
-  a{
-    color:$menuFontcolor;
-   }
-  
-  .material-icons{
-    font-size: 24px;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-  }
-}
 

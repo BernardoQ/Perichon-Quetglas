@@ -102,7 +102,7 @@ a {
     font-weight: 600; }
     .content__navbar li:hover {
       transform: scale(1.2);
-      transition: ease-out 0.2s; }
+      transition: ease-out 0.3s; }
     .content__navbar li a {
       color: black;
       font-size: 1.5rem;
@@ -138,12 +138,17 @@ a {
       flex-direction: column;
       justify-content: space-around;
       margin: 2rem 0 5rem 0;
-      text-align: center; }
+      text-align: center;
+      padding-right: 7rem; }
+      .footer .footer__content .quickMenu__content .quickMenu__title h4 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: black; }
       .footer .footer__content .quickMenu__content .quickMenu__item {
         transition: transform 0.3s; }
         .footer .footer__content .quickMenu__content .quickMenu__item:hover {
           transform: scale(1.2);
-          transition: ease-out 0.2s; }
+          transition: ease-out 0.3s; }
         .footer .footer__content .quickMenu__content .quickMenu__item a {
           color: black;
           font-size: 1.5rem;
@@ -154,15 +159,16 @@ a {
             transition: ease-out 0.2s;
             color: #DEC513; }
     .footer .footer__content .footer__socialMedia {
-      display: flex; }
+      display: flex;
+      justify-content: center; }
       .footer .footer__content .footer__socialMedia .socialMedia__item {
-        padding: 0 0.5rem 6rem 0.5rem; }
+        padding: 0 0.5rem 5rem 0.5rem; }
       .footer .footer__content .footer__socialMedia .socialMedia__item-content {
-        width: 6rem;
-        height: 6rem;
+        width: 4rem;
+        height: 4rem;
         background-color: #E33532;
         text-align: center;
-        line-height: 6rem;
+        line-height: 4rem;
         margin: 0 10px;
         display: block;
         border-radius: 50%;
@@ -202,10 +208,11 @@ a {
   background: #DEC513; }
 
 .footer__rights {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: #E33532;
   justify-content: center;
-  padding-top: 6rem;
+  padding-top: 5rem;
   margin: auto; }
   .footer__rights .rights__text {
     justify-self: center;
@@ -213,17 +220,18 @@ a {
     font-size: 1.3rem;
     color: black;
     font-weight: 600; }
-
-.goUp {
-  display: flex;
-  justify-content: right;
-  background-color: #E33532; }
-  .goUp a {
-    color: black; }
-  .goUp .material-icons {
-    font-size: 24px;
-    margin-right: 2rem;
-    margin-bottom: 2rem; }
+    .footer__rights .rights__text a {
+      color: black; }
+  .footer__rights .goUp {
+    display: flex;
+    justify-content: right;
+    background-color: #E33532; }
+    .footer__rights .goUp a {
+      color: black; }
+    .footer__rights .goUp .material-icons {
+      font-size: 24px;
+      margin-right: 2rem;
+      margin-bottom: 2rem; }
 
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
@@ -241,16 +249,14 @@ a {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
     height: 62rem; }
-
-.products__caract li {
-  list-style: circle;
-  margin-left: 2rem; }
-
-.products__img {
-  width: 38rem;
-  height: 30rem;
-  border-radius: 15px;
-  margin: 1rem auto; }
+    .section__products .card .products__img {
+      width: 38rem;
+      height: 30rem;
+      border-radius: 15px;
+      margin: 1rem auto; }
+    .section__products .card .products__caract li {
+      list-style: circle;
+      margin-left: 2rem; }
 
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
@@ -391,27 +397,24 @@ a {
 /*----------FINDUS PAGE STYLE----------*/
 .section__findUs {
   margin-bottom: 10rem; }
-
-.findUs__grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  align-items: center;
-  width: fit-content;
-  padding: 0;
-  margin: 5rem auto auto auto;
-  column-gap: 5rem;
-  row-gap: 5rem; }
-
-.grid__clientLogo img {
-  width: 15rem;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: transform 0.3s; }
-
-.grid__clientLogo img:hover {
-  transform: scale(1.2);
-  transition: ease-out 0.3s; }
+  .section__findUs .findUs__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    width: fit-content;
+    padding: 0;
+    margin: 5rem auto auto auto;
+    column-gap: 5rem;
+    row-gap: 5rem; }
+    .section__findUs .findUs__grid .grid__clientLogo img {
+      width: 15rem;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      transition: transform 0.3s; }
+      .section__findUs .findUs__grid .grid__clientLogo img:hover {
+        transform: scale(1.2);
+        transition: ease-out 0.3s; }
 
 /*----------INDEX - MARKETING----------*/
 .marketing {
@@ -607,6 +610,8 @@ a {
   /*----------FOOTER----------*/
   .footer__content {
     display: grid !important; }
+    .footer__content .quickMenu__content {
+      padding: 0 !important; }
   .goUp {
     display: none; } }
 

@@ -290,6 +290,10 @@
   /*----------FOOTER----------*/ 
   .footer__content{
     display: grid !important;
+
+      .quickMenu__content{
+        padding: 0 !important;
+      }
   }
 
   .goUp{

@@ -8,19 +8,22 @@
       box-shadow: $cardShadow;
       border-radius: 15px;
       height: 62rem;
+
+      .products__img{
+        width:38rem;
+        height:30rem;
+        border-radius: 15px;
+        margin: 1rem auto; 
+      }
+
+      .products__caract li{
+        list-style: circle;
+        margin-left: 2rem;
+      }
     }
 }
 
-.products__caract li{
-  list-style: circle;
-  margin-left: 2rem;
-}
 
-.products__img{
-  width:38rem;
-  height:30rem;
-  border-radius: 15px;
-  margin: 1rem auto; 
-}
+
   
 

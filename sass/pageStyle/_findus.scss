@@ -1,30 +1,30 @@
 @import 'variables';
+
 /*----------FINDUS PAGE STYLE----------*/
 .section__findUs{
     @extend %sectionTitle;
     margin-bottom: $sectionMargin;
-}
 
-.findUs__grid{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
-    width: fit-content;    
-    padding: 0;
-    margin: 5rem auto auto auto;
-    column-gap: 5rem;
-    row-gap: 5rem;
-}
+    .findUs__grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        width: fit-content;    
+        padding: 0;
+        margin: 5rem auto auto auto;
+        column-gap: 5rem;
+        row-gap: 5rem;
 
-.grid__clientLogo img{
-    width: 15rem;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: $cardShadow;
-    transition: transform 0.3s
-}
+        .grid__clientLogo img{
+            width: 15rem;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: $cardShadow;
+            transition: transform 0.3s;
 
-.grid__clientLogo img:hover{
-    transform: scale(1.2);    
-    transition: ease-out 0.3s;
+            &:hover{
+                @include menuItemHover;
+            }
+        }
+    }
 }
