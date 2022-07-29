@@ -50,22 +50,15 @@ a {
   padding: 0 !important;
   margin: 0 !important;
   height: 100vh;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   -webkit-perspective: 700px;
   perspective: 700px; }
 
-.disappear {
-  animation: vanish 2s forwards; }
-
-@keyframes vanish {
-  100% {
-    opacity: 0;
-    visibility: hidden; } }
-
 .loader > span {
-  font-size: 130px;
+  font-size: 13rem;
   font-family: 'Ropa Soft Pro', serif !important;
   display: inline-block;
   animation: flip 2.6s infinite linear;
@@ -682,6 +675,9 @@ a {
     display: none; } }
 
 @media (max-width: 576px) {
+  /*----------HEADER----------*/
+  .loader > span {
+    font-size: 10rem; }
   /*----------PRODUCTS PAGE CARDS----------*/
   .products__img {
     width: 34rem; }
@@ -707,6 +703,9 @@ a {
     grid-template-columns: repeat(1, 1fr); } }
 
 @media (max-width: 480px) {
+  /*----------HEADER----------*/
+  .loader > span {
+    font-size: 9rem; }
   /*----------GALMA----------*/
   .sectionGalma__products img {
     width: 15rem;

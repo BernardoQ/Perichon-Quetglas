@@ -124,11 +124,7 @@
 
 /*----------MEDIA QUERIES----------*/
 @media (max-width: 1260px){
-    /*----------HEADER----------*/
-    .loader{
-      height: 100vh;
-      width: 100vw;
-    }
+
 
   /*----------HEADER STYLES----------*/
   .header__content{
@@ -174,12 +170,7 @@
 }
 
 @media (max-width: 992px){
-    /*----------HEADER----------*/
-    .loader{
-      height: 100vh;
-      width: 100vw;
-    }
-  
+
 
   /*----------HEADER----------*/
   .logoHeader{
@@ -319,6 +310,11 @@
 }
 
 @media (max-width: 576px){
+    /*----------HEADER----------*/
+    .loader>span{
+      font-size: 10rem;
+    }
+
   /*----------PRODUCTS PAGE CARDS----------*/
   .products__img{
     width: 34rem;
@@ -356,7 +352,11 @@
 }
 
 @media (max-width: 480px){
-
+    /*----------HEADER----------*/
+    .loader>span{
+      font-size: 9rem;
+    }
+  
   /*----------GALMA----------*/
   .sectionGalma__products{
     img{
