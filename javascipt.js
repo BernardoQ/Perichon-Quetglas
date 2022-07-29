@@ -1,4 +1,7 @@
-
+window.onload = function(){
+    $("#onload").fadeOut();
+    $("body").removeClass("hidden");
+}
 
 function mostrar(){
     swal({
