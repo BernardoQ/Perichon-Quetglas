@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex&family=Ropa+Sans:ital@1&display=swap");
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -59,7 +60,7 @@ a {
 
 .loader > span {
   font-size: 13rem;
-  font-family: 'Ropa Soft Pro', serif !important;
+  font-family: 'Ropa Soft Pro', 'Ropa Sans', sans-serif !important;
   display: inline-block;
   animation: flip 2.6s infinite linear;
   transform-origin: 0 70%;
