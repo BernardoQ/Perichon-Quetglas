@@ -705,7 +705,8 @@ a {
 @media (max-width: 480px) {
   /*----------HEADER----------*/
   .loader > span {
-    font-size: 9rem; }
+    font-size: 8rem;
+    width: fit-content; }
   /*----------GALMA----------*/
   .sectionGalma__products img {
     width: 15rem;
@@ -718,6 +719,9 @@ a {
     width: fit-content; } }
 
 @media (max-width: 380px) {
+  /*----------HEADER----------*/
+  .loader > span {
+    font-size: 8rem; }
   /*---------SECTION TITLE GLOBAL STYLE----------*/
   .section__title {
     font-size: 4rem; }
