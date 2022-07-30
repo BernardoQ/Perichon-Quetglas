@@ -48,6 +48,18 @@
     }
 }
 /*----------END INDEX - MARKETING----------*/
+
+/*----------INDEX - SLIDER----------*/
+.carousel-item{
+  .img1{
+    display: block;
+  }
+
+  .img2{
+    display: none;
+  }
+}
+/*----------END INDEX - SLIDER----------*/
  
   
 /*----------INDEX - HIGHLIGHTS----------*/
@@ -74,8 +86,6 @@
     font-size: $h3;
   }
 }
-
-
 /*----------END INDEX - HIGHLIGHTS----------*/
 
   
@@ -173,8 +183,6 @@
 }
 
 @media (max-width: 992px){
-
-
   /*----------HEADER----------*/
   .logoHeader{
     margin: auto;
@@ -254,6 +262,18 @@
 }
 
 @media (max-width: 768px){ 
+
+  /*----------SLIDER----------*/
+  .carousel-item{
+    .img1{
+      display: none;
+    }
+
+    .img2{
+      display: block;
+    }
+  }
+
   /*----------INDEX - GALMA DECO----------*/
   .sectionGalma__products img{
     width: map-get($galmaImg, md);       
