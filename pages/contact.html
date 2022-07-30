@@ -76,7 +76,7 @@
             Contactanos 
         </h2>
         <div class="contact__grid">
-            <form class="contact__form" action="https://formsubmit.co/a4445ce9a15f1235e8ddae671c6c47f6" method="POST">
+            <form class="contact__form" id="form"  action="https://formsubmit.co/a4445ce9a15f1235e8ddae671c6c47f6" method="POST" onsubmit="formSend()">
                 <ul class="form__grid">
                     <li id="name" class="form--item">
                         <div>
@@ -124,7 +124,7 @@
                     </li>
 
                     <li id="sendButton" class="form--item">                
-                        <button class="button btn" onclick= mostrar()>
+                        <button class="button btn">
                             <input type="submit" value="Enviar" id="submitBtn" class="btn--input">
                         </button>
                     </li>
