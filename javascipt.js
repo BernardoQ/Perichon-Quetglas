@@ -25,6 +25,7 @@ window.addEventListener("scroll", reveal);
 
 
 //CONTACT FORM FUNCTION
+
 function mostrar(){
     swal({
         title: "Gracias por contactarnos!",
@@ -33,5 +34,24 @@ function mostrar(){
         button: false,
         });
 }
+
+/*function mostrar(){
+    let name = document.getElementById("name").value;
+    let lastName = document.getElementById("lastName").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;  
+
+    if (name.trim() != "" && lastName.trim() != "" && email.trim() != "" && subject.trim() != "" && message.trim() != ""){
+        swal({
+            title: "Gracias por contactarnos!",
+            text: "Te estaremos respondiendo a la brevedad!",
+            icon: "success",
+            button: false,
+            });
+    }
+}*/
+
+
 
 
