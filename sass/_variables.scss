@@ -5,7 +5,10 @@ $brandRed:#E33532;
 $brandYellow: #DEC513;
 $cardShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
 $menuFontcolor: black;
-$sectionMargin: 10rem;
+
+%sectionMargin{
+  margin-bottom: 10rem;
+}
 
 %sectionTitle{
     margin-top: 5rem;

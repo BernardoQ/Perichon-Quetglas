@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caudex&family=Ropa+Sans:ital@1&display=swap");
+.section1 {
+  margin-bottom: 10rem; }
+
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -97,6 +100,9 @@ a {
 .loader > span:nth-child(8) {
   animation-delay: 2s; }
 
+.section1 {
+  margin-bottom: 10rem; }
+
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -105,6 +111,9 @@ a {
   font-size: 6rem;
   color: #E33532;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4); }
+
+.section1 {
+  margin-bottom: 10rem; }
 
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
@@ -288,6 +297,9 @@ a {
       margin-right: 2rem;
       margin-bottom: 2rem; }
 
+.section1 {
+  margin-bottom: 10rem; }
+
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -337,6 +349,9 @@ a {
     transform: translateX(0);
     opacity: 1; } }
 
+.section1 {
+  margin-bottom: 10rem; }
+
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -348,7 +363,8 @@ a {
 
 /*----------PRODUCTS PAGE STYLE----------*/
 .section__products {
-  margin: 8rem 2rem 10rem 2rem; }
+  margin-left: 2rem;
+  margin-right: 2rem; }
   .section__products .card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
@@ -370,6 +386,9 @@ a {
       list-style: circle;
       margin-left: 2rem; }
 
+.section1 {
+  margin-bottom: 10rem; }
+
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -380,9 +399,6 @@ a {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4); }
 
 /*----------ABOUT US PAGE STYLE----------*/
-.sectionAboutUs {
-  margin-bottom: 10rem; }
-
 .about__text {
   font-size: 2rem;
   text-align: left;
@@ -395,6 +411,9 @@ a {
   height: 33rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
+.section1 {
+  margin-bottom: 10rem; }
+
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -405,9 +424,6 @@ a {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4); }
 
 /*----------CONTACT PAGE STYLE----------*/
-.contact {
-  margin-bottom: 10rem; }
-
 .contact__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
@@ -497,6 +513,9 @@ a {
   color: black;
   text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3); }
 
+.section1 {
+  margin-bottom: 10rem; }
+
 .section__title, .sectionAboutUs h2, .contact .section__title, .section__findUs {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -507,26 +526,24 @@ a {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4); }
 
 /*----------FINDUS PAGE STYLE----------*/
-.section__findUs {
-  margin-bottom: 10rem; }
-  .section__findUs .findUs__grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
-    width: fit-content;
-    padding: 0;
-    margin: 5rem auto auto auto;
-    column-gap: 5rem;
-    row-gap: 5rem; }
-    .section__findUs .findUs__grid .grid__clientLogo img {
-      width: 15rem;
-      height: auto;
-      border-radius: 5px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      transition: transform 0.3s; }
-      .section__findUs .findUs__grid .grid__clientLogo img:hover {
-        transform: scale(1.2);
-        transition: ease-out 0.3s; }
+.section__findUs .findUs__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  width: fit-content;
+  padding: 0;
+  margin: auto;
+  column-gap: 5rem;
+  row-gap: 5rem; }
+  .section__findUs .findUs__grid .grid__clientLogo img {
+    width: 15rem;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s; }
+    .section__findUs .findUs__grid .grid__clientLogo img:hover {
+      transform: scale(1.2);
+      transition: ease-out 0.3s; }
 
 /*----------INDEX - MARKETING----------*/
 .marketing {

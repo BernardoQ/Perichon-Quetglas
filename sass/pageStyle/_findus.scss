@@ -3,7 +3,6 @@
 /*----------FINDUS PAGE STYLE----------*/
 .section__findUs{
     @extend %sectionTitle;
-    margin-bottom: $sectionMargin;
 
     .findUs__grid{
         display: grid;
@@ -11,7 +10,7 @@
         align-items: center;
         width: fit-content;    
         padding: 0;
-        margin: 5rem auto auto auto;
+        margin: auto;
         column-gap: 5rem;
         row-gap: 5rem;
 

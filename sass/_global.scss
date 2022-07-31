@@ -23,6 +23,9 @@ a{
   text-decoration: none !important;
 }
 
+.section1{
+  @extend %sectionMargin;
+}
 
 .section__title{ 
   @extend %sectionTitle;
