@@ -41,6 +41,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+    .navbar-toggler{
+      color: $brandYellow;
+      font-size: 2.5rem;
+    }
 }
 
 .content__navbar{
@@ -103,7 +108,7 @@
       justify-content: space-around;
       margin: 2rem 0 5rem 0;
       text-align: center;
-      padding-right: 7rem;
+      padding-right: 4rem;
 
         .quickMenu__title h4{
           font-size: 2.5rem;

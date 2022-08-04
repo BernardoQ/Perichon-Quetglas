@@ -13,12 +13,20 @@
 
 * {
   margin: 0;
-  padding: 0;
-  font-family: 'Cadeux', sans-serif; }
+  padding: 0; }
 
 html {
   font-size: 62.5%;
   line-height: 0; }
+
+h3 {
+  font-family: "Cadeux", sans-serif; }
+
+h4 {
+  font-family: "Cadeux", sans-serif; }
+
+p {
+  font-family: "Cadeux", sans-serif; }
 
 ul {
   list-style: none !important;
@@ -154,6 +162,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
+  .header__content .navbar-toggler {
+    color: #DEC513;
+    font-size: 2.5rem; }
 
 .content__navbar {
   display: flex;
@@ -203,7 +214,7 @@ a {
       justify-content: space-around;
       margin: 2rem 0 5rem 0;
       text-align: center;
-      padding-right: 7rem; }
+      padding-right: 4rem; }
       .footer .footer__content .quickMenu__content .quickMenu__title h4 {
         font-size: 2.5rem;
         font-weight: bolder;
@@ -560,12 +571,19 @@ a {
       width: 25rem;
       height: 25rem; }
     .marketing .marketing__cards .marketing__cards--item a {
-      font-size: large; }
+      font-size: large;
+      color: whitesmoke; }
     .marketing .marketing__cards .marketing__cards--item .btn {
       padding-top: 1rem;
       text-decoration: none;
       height: 5rem;
-      width: 10rem; }
+      width: 10rem;
+      transition: transform 0.3s; }
+      .marketing .marketing__cards .marketing__cards--item .btn:hover {
+        background-color: #E33532 !important;
+        color: #DEC513;
+        text-decoration: none;
+        transform: scale(1.1); }
 
 /*----------END INDEX - MARKETING----------*/
 /*----------INDEX - SLIDER----------*/

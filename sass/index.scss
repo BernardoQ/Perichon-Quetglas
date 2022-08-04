@@ -36,13 +36,22 @@
         
         a{
           font-size: large;
+          color: whitesmoke;
         }
              
         .btn{
           padding-top: 1rem;
           text-decoration: none;
           height: 5rem;
-          width: 10rem;
+          width: 10rem;  
+          transition: transform 0.3s;   
+
+          &:hover{
+              background-color: $brandRed !important;
+              color: $brandYellow;
+              text-decoration: none;
+              transform: scale(1.1);
+          }        
         }
       }
     }
